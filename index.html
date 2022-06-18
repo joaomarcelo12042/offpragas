@@ -1,0 +1,1190 @@
+
+<!DOCTYPE html>
+<html class="html" lang="pt-BR" itemscope itemtype="http://schema.org/WebPage">
+<head>
+	
+	<meta charset="UTF-8">
+	<link rel="profile" href="https://gmpg.org/xfn/11">
+
+	<script data-cfasync="false" type="text/javascript">var ewww_webp_supported=!1;function check_webp_feature(A,e){var w;e=void 0!==e?e:function(){},ewww_webp_supported?e(ewww_webp_supported):((w=new Image).onload=function(){ewww_webp_supported=0<w.width&&0<w.height,e&&e(ewww_webp_supported)},w.onerror=function(){e&&e(!1)},w.src="data:image/webp;base64,"+{alpha:"UklGRkoAAABXRUJQVlA4WAoAAAAQAAAAAAAAAAAAQUxQSAwAAAARBxAR/Q9ERP8DAABWUDggGAAAABQBAJ0BKgEAAQAAAP4AAA3AAP7mtQAAAA=="}[A])}check_webp_feature("alpha");</script><script data-cfasync="false" type="text/javascript">var Arrive=function(c,w){"use strict";if(c.MutationObserver&&"undefined"!=typeof HTMLElement){var r,a=0,u=(r=HTMLElement.prototype.matches||HTMLElement.prototype.webkitMatchesSelector||HTMLElement.prototype.mozMatchesSelector||HTMLElement.prototype.msMatchesSelector,{matchesSelector:function(e,t){return e instanceof HTMLElement&&r.call(e,t)},addMethod:function(e,t,r){var a=e[t];e[t]=function(){return r.length==arguments.length?r.apply(this,arguments):"function"==typeof a?a.apply(this,arguments):void 0}},callCallbacks:function(e,t){t&&t.options.onceOnly&&1==t.firedElems.length&&(e=[e[0]]);for(var r,a=0;r=e[a];a++)r&&r.callback&&r.callback.call(r.elem,r.elem);t&&t.options.onceOnly&&1==t.firedElems.length&&t.me.unbindEventWithSelectorAndCallback.call(t.target,t.selector,t.callback)},checkChildNodesRecursively:function(e,t,r,a){for(var i,n=0;i=e[n];n++)r(i,t,a)&&a.push({callback:t.callback,elem:i}),0<i.childNodes.length&&u.checkChildNodesRecursively(i.childNodes,t,r,a)},mergeArrays:function(e,t){var r,a={};for(r in e)e.hasOwnProperty(r)&&(a[r]=e[r]);for(r in t)t.hasOwnProperty(r)&&(a[r]=t[r]);return a},toElementsArray:function(e){return e=void 0!==e&&("number"!=typeof e.length||e===c)?[e]:e}}),e=(l.prototype.addEvent=function(e,t,r,a){a={target:e,selector:t,options:r,callback:a,firedElems:[]};return this._beforeAdding&&this._beforeAdding(a),this._eventsBucket.push(a),a},l.prototype.removeEvent=function(e){for(var t,r=this._eventsBucket.length-1;t=this._eventsBucket[r];r--)e(t)&&(this._beforeRemoving&&this._beforeRemoving(t),(t=this._eventsBucket.splice(r,1))&&t.length&&(t[0].callback=null))},l.prototype.beforeAdding=function(e){this._beforeAdding=e},l.prototype.beforeRemoving=function(e){this._beforeRemoving=e},l),t=function(i,n){var o=new e,l=this,s={fireOnAttributesModification:!1};return o.beforeAdding(function(t){var e=t.target;e!==c.document&&e!==c||(e=document.getElementsByTagName("html")[0]);var r=new MutationObserver(function(e){n.call(this,e,t)}),a=i(t.options);r.observe(e,a),t.observer=r,t.me=l}),o.beforeRemoving(function(e){e.observer.disconnect()}),this.bindEvent=function(e,t,r){t=u.mergeArrays(s,t);for(var a=u.toElementsArray(this),i=0;i<a.length;i++)o.addEvent(a[i],e,t,r)},this.unbindEvent=function(){var r=u.toElementsArray(this);o.removeEvent(function(e){for(var t=0;t<r.length;t++)if(this===w||e.target===r[t])return!0;return!1})},this.unbindEventWithSelectorOrCallback=function(r){var a=u.toElementsArray(this),i=r,e="function"==typeof r?function(e){for(var t=0;t<a.length;t++)if((this===w||e.target===a[t])&&e.callback===i)return!0;return!1}:function(e){for(var t=0;t<a.length;t++)if((this===w||e.target===a[t])&&e.selector===r)return!0;return!1};o.removeEvent(e)},this.unbindEventWithSelectorAndCallback=function(r,a){var i=u.toElementsArray(this);o.removeEvent(function(e){for(var t=0;t<i.length;t++)if((this===w||e.target===i[t])&&e.selector===r&&e.callback===a)return!0;return!1})},this},i=new function(){var s={fireOnAttributesModification:!1,onceOnly:!1,existing:!1};function n(e,t,r){return!(!u.matchesSelector(e,t.selector)||(e._id===w&&(e._id=a++),-1!=t.firedElems.indexOf(e._id)))&&(t.firedElems.push(e._id),!0)}var c=(i=new t(function(e){var t={attributes:!1,childList:!0,subtree:!0};return e.fireOnAttributesModification&&(t.attributes=!0),t},function(e,i){e.forEach(function(e){var t=e.addedNodes,r=e.target,a=[];null!==t&&0<t.length?u.checkChildNodesRecursively(t,i,n,a):"attributes"===e.type&&n(r,i)&&a.push({callback:i.callback,elem:r}),u.callCallbacks(a,i)})})).bindEvent;return i.bindEvent=function(e,t,r){t=void 0===r?(r=t,s):u.mergeArrays(s,t);var a=u.toElementsArray(this);if(t.existing){for(var i=[],n=0;n<a.length;n++)for(var o=a[n].querySelectorAll(e),l=0;l<o.length;l++)i.push({callback:r,elem:o[l]});if(t.onceOnly&&i.length)return r.call(i[0].elem,i[0].elem);setTimeout(u.callCallbacks,1,i)}c.call(this,e,t,r)},i},o=new function(){var a={};function i(e,t){return u.matchesSelector(e,t.selector)}var n=(o=new t(function(){return{childList:!0,subtree:!0}},function(e,r){e.forEach(function(e){var t=e.removedNodes,e=[];null!==t&&0<t.length&&u.checkChildNodesRecursively(t,r,i,e),u.callCallbacks(e,r)})})).bindEvent;return o.bindEvent=function(e,t,r){t=void 0===r?(r=t,a):u.mergeArrays(a,t),n.call(this,e,t,r)},o};d(HTMLElement.prototype),d(NodeList.prototype),d(HTMLCollection.prototype),d(HTMLDocument.prototype),d(Window.prototype);var n={};return s(i,n,"unbindAllArrive"),s(o,n,"unbindAllLeave"),n}function l(){this._eventsBucket=[],this._beforeAdding=null,this._beforeRemoving=null}function s(e,t,r){u.addMethod(t,r,e.unbindEvent),u.addMethod(t,r,e.unbindEventWithSelectorOrCallback),u.addMethod(t,r,e.unbindEventWithSelectorAndCallback)}function d(e){e.arrive=i.bindEvent,s(i,e,"unbindArrive"),e.leave=o.bindEvent,s(o,e,"unbindLeave")}}(window,void 0),ewww_webp_supported=!1;function check_webp_feature(e,t){var r;ewww_webp_supported?t(ewww_webp_supported):((r=new Image).onload=function(){ewww_webp_supported=0<r.width&&0<r.height,t(ewww_webp_supported)},r.onerror=function(){t(!1)},r.src="data:image/webp;base64,"+{alpha:"UklGRkoAAABXRUJQVlA4WAoAAAAQAAAAAAAAAAAAQUxQSAwAAAARBxAR/Q9ERP8DAABWUDggGAAAABQBAJ0BKgEAAQAAAP4AAA3AAP7mtQAAAA==",animation:"UklGRlIAAABXRUJQVlA4WAoAAAASAAAAAAAAAAAAQU5JTQYAAAD/////AABBTk1GJgAAAAAAAAAAAAAAAAAAAGQAAABWUDhMDQAAAC8AAAAQBxAREYiI/gcA"}[e])}function ewwwLoadImages(e){if(e){for(var t=document.querySelectorAll(".batch-image img, .image-wrapper a, .ngg-pro-masonry-item a, .ngg-galleria-offscreen-seo-wrapper a"),r=0,a=t.length;r<a;r++)ewwwAttr(t[r],"data-src",t[r].getAttribute("data-webp")),ewwwAttr(t[r],"data-thumbnail",t[r].getAttribute("data-webp-thumbnail"));for(var i=document.querySelectorAll(".rev_slider ul li"),r=0,a=i.length;r<a;r++){ewwwAttr(i[r],"data-thumb",i[r].getAttribute("data-webp-thumb"));for(var n=1;n<11;)ewwwAttr(i[r],"data-param"+n,i[r].getAttribute("data-webp-param"+n)),n++}for(r=0,a=(i=document.querySelectorAll(".rev_slider img")).length;r<a;r++)ewwwAttr(i[r],"data-lazyload",i[r].getAttribute("data-webp-lazyload"));for(var o=document.querySelectorAll("div.woocommerce-product-gallery__image"),r=0,a=o.length;r<a;r++)ewwwAttr(o[r],"data-thumb",o[r].getAttribute("data-webp-thumb"))}for(var l=document.querySelectorAll("video"),r=0,a=l.length;r<a;r++)ewwwAttr(l[r],"poster",e?l[r].getAttribute("data-poster-webp"):l[r].getAttribute("data-poster-image"));for(var s,c=document.querySelectorAll("img.ewww_webp_lazy_load"),r=0,a=c.length;r<a;r++)e&&(ewwwAttr(c[r],"data-lazy-srcset",c[r].getAttribute("data-lazy-srcset-webp")),ewwwAttr(c[r],"data-srcset",c[r].getAttribute("data-srcset-webp")),ewwwAttr(c[r],"data-lazy-src",c[r].getAttribute("data-lazy-src-webp")),ewwwAttr(c[r],"data-src",c[r].getAttribute("data-src-webp")),ewwwAttr(c[r],"data-orig-file",c[r].getAttribute("data-webp-orig-file")),ewwwAttr(c[r],"data-medium-file",c[r].getAttribute("data-webp-medium-file")),ewwwAttr(c[r],"data-large-file",c[r].getAttribute("data-webp-large-file")),null!=(s=c[r].getAttribute("srcset"))&&!1!==s&&s.includes("R0lGOD")&&ewwwAttr(c[r],"src",c[r].getAttribute("data-lazy-src-webp"))),c[r].className=c[r].className.replace(/\bewww_webp_lazy_load\b/,"");for(var w=document.querySelectorAll(".ewww_webp"),r=0,a=w.length;r<a;r++)e?(ewwwAttr(w[r],"srcset",w[r].getAttribute("data-srcset-webp")),ewwwAttr(w[r],"src",w[r].getAttribute("data-src-webp")),ewwwAttr(w[r],"data-orig-file",w[r].getAttribute("data-webp-orig-file")),ewwwAttr(w[r],"data-medium-file",w[r].getAttribute("data-webp-medium-file")),ewwwAttr(w[r],"data-large-file",w[r].getAttribute("data-webp-large-file")),ewwwAttr(w[r],"data-large_image",w[r].getAttribute("data-webp-large_image")),ewwwAttr(w[r],"data-src",w[r].getAttribute("data-webp-src"))):(ewwwAttr(w[r],"srcset",w[r].getAttribute("data-srcset-img")),ewwwAttr(w[r],"src",w[r].getAttribute("data-src-img"))),w[r].className=w[r].className.replace(/\bewww_webp\b/,"ewww_webp_loaded");window.jQuery&&jQuery.fn.isotope&&jQuery.fn.imagesLoaded&&(jQuery(".fusion-posts-container-infinite").imagesLoaded(function(){jQuery(".fusion-posts-container-infinite").hasClass("isotope")&&jQuery(".fusion-posts-container-infinite").isotope()}),jQuery(".fusion-portfolio:not(.fusion-recent-works) .fusion-portfolio-wrapper").imagesLoaded(function(){jQuery(".fusion-portfolio:not(.fusion-recent-works) .fusion-portfolio-wrapper").isotope()}))}function ewwwWebPInit(e){ewwwLoadImages(e),ewwwNggLoadGalleries(e),document.arrive(".ewww_webp",function(){ewwwLoadImages(e)}),document.arrive(".ewww_webp_lazy_load",function(){ewwwLoadImages(e)}),document.arrive("videos",function(){ewwwLoadImages(e)}),"loading"==document.readyState?document.addEventListener("DOMContentLoaded",ewwwJSONParserInit):("undefined"!=typeof galleries&&ewwwNggParseGalleries(e),ewwwWooParseVariations(e))}function ewwwAttr(e,t,r){null!=r&&!1!==r&&e.setAttribute(t,r)}function ewwwJSONParserInit(){"undefined"!=typeof galleries&&check_webp_feature("alpha",ewwwNggParseGalleries),check_webp_feature("alpha",ewwwWooParseVariations)}function ewwwWooParseVariations(e){if(e)for(var t=document.querySelectorAll("form.variations_form"),r=0,a=t.length;r<a;r++){var i=t[r].getAttribute("data-product_variations"),n=!1;try{for(var o in i=JSON.parse(i))void 0!==i[o]&&void 0!==i[o].image&&(void 0!==i[o].image.src_webp&&(i[o].image.src=i[o].image.src_webp,n=!0),void 0!==i[o].image.srcset_webp&&(i[o].image.srcset=i[o].image.srcset_webp,n=!0),void 0!==i[o].image.full_src_webp&&(i[o].image.full_src=i[o].image.full_src_webp,n=!0),void 0!==i[o].image.gallery_thumbnail_src_webp&&(i[o].image.gallery_thumbnail_src=i[o].image.gallery_thumbnail_src_webp,n=!0),void 0!==i[o].image.thumb_src_webp&&(i[o].image.thumb_src=i[o].image.thumb_src_webp,n=!0));n&&ewwwAttr(t[r],"data-product_variations",JSON.stringify(i))}catch(e){}}}function ewwwNggParseGalleries(e){if(e)for(var t in galleries){var r=galleries[t];galleries[t].images_list=ewwwNggParseImageList(r.images_list)}}function ewwwNggLoadGalleries(e){e&&document.addEventListener("ngg.galleria.themeadded",function(e,t){window.ngg_galleria._create_backup=window.ngg_galleria.create,window.ngg_galleria.create=function(e,t){var r=$(e).data("id");return galleries["gallery_"+r].images_list=ewwwNggParseImageList(galleries["gallery_"+r].images_list),window.ngg_galleria._create_backup(e,t)}})}function ewwwNggParseImageList(e){for(var t in e){var r=e[t];if(void 0!==r["image-webp"]&&(e[t].image=r["image-webp"],delete e[t]["image-webp"]),void 0!==r["thumb-webp"]&&(e[t].thumb=r["thumb-webp"],delete e[t]["thumb-webp"]),void 0!==r.full_image_webp&&(e[t].full_image=r.full_image_webp,delete e[t].full_image_webp),void 0!==r.srcsets)for(var a in r.srcsets)nggSrcset=r.srcsets[a],void 0!==r.srcsets[a+"-webp"]&&(e[t].srcsets[a]=r.srcsets[a+"-webp"],delete e[t].srcsets[a+"-webp"]);if(void 0!==r.full_srcsets)for(var i in r.full_srcsets)nggFSrcset=r.full_srcsets[i],void 0!==r.full_srcsets[i+"-webp"]&&(e[t].full_srcsets[i]=r.full_srcsets[i+"-webp"],delete e[t].full_srcsets[i+"-webp"])}return e}check_webp_feature("alpha",ewwwWebPInit);</script><meta name='robots' content='max-image-preview:large' />
+<meta name="viewport" content="width=device-width, initial-scale=1">
+	<!-- This site is optimized with the Yoast SEO plugin v15.7 - https://yoast.com/wordpress/plugins/seo/ -->
+	<title>Dedetizadora SP | Empresa Dedetizadora e Descupinizadora</title>
+	<meta name="robots" content="index, follow, max-snippet:-1, max-image-preview:large, max-video-preview:-1" />
+	<link rel="canonical" href="https://offpragasdedetizacao.com.br/" />
+	<meta property="og:locale" content="pt_BR" />
+	<meta property="og:type" content="website" />
+	<meta property="og:title" content="Dedetizadora SP | Empresa Dedetizadora e Descupinizadora" />
+	<meta property="og:url" content="https://offpragasdedetizacao.com.br/" />
+	<meta property="og:site_name" content="offpragasdedetizadora" />
+	<meta property="article:modified_time" content="2022-06-02T13:52:00+00:00" />
+	<meta property="og:image" content="https://offpragasdedetizacao.com.br/wp-content/uploads/2019/02/dedeizador-2.png" />
+	<meta property="og:image:width" content="491" />
+	<meta property="og:image:height" content="499" />
+	<meta name="twitter:card" content="summary_large_image" />
+	<meta name="twitter:label1" content="Est. reading time">
+	<meta name="twitter:data1" content="8 minutos">
+	<script type="application/ld+json" class="yoast-schema-graph">{"@context":"https://schema.org","@graph":[{"@type":"Organization","@id":"https://offpragasdedetizacao.com.br/#organization","name":"Off Pragas Dedetizadora","url":"https://offpragasdedetizacao.com.br/","sameAs":[],"logo":{"@type":"ImageObject","@id":"https://offpragasdedetizacao.com.br/#logo","inLanguage":"pt-BR","url":"https://offpragasdedetizacao.com.br/wp-content/uploads/2018/09/favicon-casa-1.png","width":512,"height":512,"caption":"Off Pragas Dedetizadora"},"image":{"@id":"https://offpragasdedetizacao.com.br/#logo"}},{"@type":"WebSite","@id":"https://offpragasdedetizacao.com.br/#website","url":"https://offpragasdedetizacao.com.br/","name":"offpragasdedetizadora","description":"Empresa Especializada em Dedetiza\u00e7\u00e3o SP","publisher":{"@id":"https://offpragasdedetizacao.com.br/#organization"},"potentialAction":[{"@type":"SearchAction","target":"https://offpragasdedetizacao.com.br/?s={search_term_string}","query-input":"required name=search_term_string"}],"inLanguage":"pt-BR"},{"@type":"ImageObject","@id":"https://offpragasdedetizacao.com.br/#primaryimage","inLanguage":"pt-BR","url":"https://offpragasdedetizacao.com.br/wp-content/uploads/2019/02/dedeizador-2.png","width":491,"height":499,"caption":"dedetizador da off pragas"},{"@type":"WebPage","@id":"https://offpragasdedetizacao.com.br/#webpage","url":"https://offpragasdedetizacao.com.br/","name":"Dedetizadora SP | Empresa Dedetizadora e Descupinizadora","isPartOf":{"@id":"https://offpragasdedetizacao.com.br/#website"},"about":{"@id":"https://offpragasdedetizacao.com.br/#organization"},"primaryImageOfPage":{"@id":"https://offpragasdedetizacao.com.br/#primaryimage"},"datePublished":"2020-09-10T14:42:29+00:00","dateModified":"2022-06-02T13:52:00+00:00","inLanguage":"pt-BR","potentialAction":[{"@type":"ReadAction","target":["https://offpragasdedetizacao.com.br/"]}]}]}</script>
+	<meta name="google-site-verification" content="cDvKI78O7KLJxpCUXTfzMPSsLi9TKjyyyYiFUh022Hw" />
+	<!-- / Yoast SEO plugin. -->
+
+
+<link rel='dns-prefetch' href='//maps.googleapis.com' />
+<link rel='dns-prefetch' href='//fonts.googleapis.com' />
+<link rel='dns-prefetch' href='//s.w.org' />
+<link rel="alternate" type="application/rss+xml" title="Feed para offpragasdedetizadora &raquo;" href="https://offpragasdedetizacao.com.br/feed/" />
+<link rel="alternate" type="application/rss+xml" title="Feed de comentários para offpragasdedetizadora &raquo;" href="https://offpragasdedetizacao.com.br/comments/feed/" />
+		<script type="text/javascript">
+			window._wpemojiSettings = {"baseUrl":"https:\/\/s.w.org\/images\/core\/emoji\/13.0.1\/72x72\/","ext":".png","svgUrl":"https:\/\/s.w.org\/images\/core\/emoji\/13.0.1\/svg\/","svgExt":".svg","source":{"concatemoji":"https:\/\/offpragasdedetizacao.com.br\/wp-includes\/js\/wp-emoji-release.min.js?ver=5.7.6"}};
+			!function(e,a,t){var n,r,o,i=a.createElement("canvas"),p=i.getContext&&i.getContext("2d");function s(e,t){var a=String.fromCharCode;p.clearRect(0,0,i.width,i.height),p.fillText(a.apply(this,e),0,0);e=i.toDataURL();return p.clearRect(0,0,i.width,i.height),p.fillText(a.apply(this,t),0,0),e===i.toDataURL()}function c(e){var t=a.createElement("script");t.src=e,t.defer=t.type="text/javascript",a.getElementsByTagName("head")[0].appendChild(t)}for(o=Array("flag","emoji"),t.supports={everything:!0,everythingExceptFlag:!0},r=0;r<o.length;r++)t.supports[o[r]]=function(e){if(!p||!p.fillText)return!1;switch(p.textBaseline="top",p.font="600 32px Arial",e){case"flag":return s([127987,65039,8205,9895,65039],[127987,65039,8203,9895,65039])?!1:!s([55356,56826,55356,56819],[55356,56826,8203,55356,56819])&&!s([55356,57332,56128,56423,56128,56418,56128,56421,56128,56430,56128,56423,56128,56447],[55356,57332,8203,56128,56423,8203,56128,56418,8203,56128,56421,8203,56128,56430,8203,56128,56423,8203,56128,56447]);case"emoji":return!s([55357,56424,8205,55356,57212],[55357,56424,8203,55356,57212])}return!1}(o[r]),t.supports.everything=t.supports.everything&&t.supports[o[r]],"flag"!==o[r]&&(t.supports.everythingExceptFlag=t.supports.everythingExceptFlag&&t.supports[o[r]]);t.supports.everythingExceptFlag=t.supports.everythingExceptFlag&&!t.supports.flag,t.DOMReady=!1,t.readyCallback=function(){t.DOMReady=!0},t.supports.everything||(n=function(){t.readyCallback()},a.addEventListener?(a.addEventListener("DOMContentLoaded",n,!1),e.addEventListener("load",n,!1)):(e.attachEvent("onload",n),a.attachEvent("onreadystatechange",function(){"complete"===a.readyState&&t.readyCallback()})),(n=t.source||{}).concatemoji?c(n.concatemoji):n.wpemoji&&n.twemoji&&(c(n.twemoji),c(n.wpemoji)))}(window,document,window._wpemojiSettings);
+		</script>
+		<style type="text/css">
+img.wp-smiley,
+img.emoji {
+	display: inline !important;
+	border: none !important;
+	box-shadow: none !important;
+	height: 1em !important;
+	width: 1em !important;
+	margin: 0 .07em !important;
+	vertical-align: -0.1em !important;
+	background: none !important;
+	padding: 0 !important;
+}
+</style>
+	<link rel='stylesheet' id='wp-block-library-css'  href='https://offpragasdedetizacao.com.br/wp-includes/css/dist/block-library/style.min.css?ver=5.7.6' type='text/css' media='all' />
+<link rel='stylesheet' id='contact-form-7-css'  href='https://offpragasdedetizacao.com.br/wp-content/plugins/contact-form-7/includes/css/styles.css?ver=5.4' type='text/css' media='all' />
+<link rel='stylesheet' id='mejorcluster-css'  href='https://offpragasdedetizacao.com.br/wp-content/plugins/mejorcluster/public/css/mejorcluster.css?ver=1.1.12' type='text/css' media='all' />
+<link rel='stylesheet' id='page-generator-pro-frontend-css'  href='https://offpragasdedetizacao.com.br/wp-content/plugins/page-generator-pro/assets/css/frontend.css?ver=5.7.6' type='text/css' media='all' />
+<link rel='stylesheet' id='dashicons-css'  href='https://offpragasdedetizacao.com.br/wp-includes/css/dashicons.min.css?ver=5.7.6' type='text/css' media='all' />
+<link rel='stylesheet' id='font-awesome-css'  href='https://offpragasdedetizacao.com.br/wp-content/themes/oceanwp/assets/css/third/font-awesome.min.css?ver=4.7.0' type='text/css' media='all' />
+<link rel='stylesheet' id='simple-line-icons-css'  href='https://offpragasdedetizacao.com.br/wp-content/themes/oceanwp/assets/css/third/simple-line-icons.min.css?ver=2.4.0' type='text/css' media='all' />
+<link rel='stylesheet' id='magnific-popup-css'  href='https://offpragasdedetizacao.com.br/wp-content/themes/oceanwp/assets/css/third/magnific-popup.min.css?ver=1.0.0' type='text/css' media='all' />
+<link rel='stylesheet' id='slick-css'  href='https://offpragasdedetizacao.com.br/wp-content/themes/oceanwp/assets/css/third/slick.min.css?ver=1.6.0' type='text/css' media='all' />
+<link rel='stylesheet' id='oceanwp-style-css'  href='https://offpragasdedetizacao.com.br/wp-content/themes/oceanwp/assets/css/style.min.css?ver=1.5.27' type='text/css' media='all' />
+<link rel='stylesheet' id='oceanwp-google-font-open-sans-css'  href='//fonts.googleapis.com/css?family=Open+Sans%3A100%2C200%2C300%2C400%2C500%2C600%2C700%2C800%2C900%2C100i%2C200i%2C300i%2C400i%2C500i%2C600i%2C700i%2C800i%2C900i&#038;subset=latin&#038;ver=5.7.6' type='text/css' media='all' />
+<link rel='stylesheet' id='tablepress-default-css'  href='https://offpragasdedetizacao.com.br/wp-content/plugins/tablepress/css/default.min.css?ver=1.12' type='text/css' media='all' />
+<link rel='stylesheet' id='qlwapp-css'  href='https://offpragasdedetizacao.com.br/wp-content/plugins/wp-whatsapp-chat/assets/frontend/css/frontend.css?ver=4.8.0' type='text/css' media='all' />
+<link rel='stylesheet' id='elementor-icons-css'  href='https://offpragasdedetizacao.com.br/wp-content/plugins/elementor/assets/lib/eicons/css/elementor-icons.min.css?ver=5.11.0' type='text/css' media='all' />
+<link rel='stylesheet' id='elementor-animations-css'  href='https://offpragasdedetizacao.com.br/wp-content/plugins/elementor/assets/lib/animations/animations.min.css?ver=3.1.4' type='text/css' media='all' />
+<link rel='stylesheet' id='elementor-frontend-legacy-css'  href='https://offpragasdedetizacao.com.br/wp-content/plugins/elementor/assets/css/frontend-legacy.min.css?ver=3.1.4' type='text/css' media='all' />
+<link rel='stylesheet' id='elementor-frontend-css'  href='https://offpragasdedetizacao.com.br/wp-content/plugins/elementor/assets/css/frontend.min.css?ver=3.1.4' type='text/css' media='all' />
+<link rel='stylesheet' id='elementor-post-5953-css'  href='https://offpragasdedetizacao.com.br/wp-content/uploads/elementor/css/post-5953.css?ver=1616085704' type='text/css' media='all' />
+<link rel='stylesheet' id='font-awesome-5-all-css'  href='https://offpragasdedetizacao.com.br/wp-content/plugins/elementor/assets/lib/font-awesome/css/all.min.css?ver=3.1.4' type='text/css' media='all' />
+<link rel='stylesheet' id='font-awesome-4-shim-css'  href='https://offpragasdedetizacao.com.br/wp-content/plugins/elementor/assets/lib/font-awesome/css/v4-shims.min.css?ver=3.1.4' type='text/css' media='all' />
+<link rel='stylesheet' id='elementor-global-css'  href='https://offpragasdedetizacao.com.br/wp-content/uploads/elementor/css/global.css?ver=1616085704' type='text/css' media='all' />
+<link rel='stylesheet' id='elementor-post-9625-css'  href='https://offpragasdedetizacao.com.br/wp-content/uploads/elementor/css/post-9625.css?ver=1654177979' type='text/css' media='all' />
+<link rel='stylesheet' id='oe-widgets-style-css'  href='https://offpragasdedetizacao.com.br/wp-content/plugins/ocean-extra/assets/css/widgets.css?ver=5.7.6' type='text/css' media='all' />
+<link rel='stylesheet' id='google-fonts-1-css'  href='https://fonts.googleapis.com/css?family=Roboto%3A100%2C100italic%2C200%2C200italic%2C300%2C300italic%2C400%2C400italic%2C500%2C500italic%2C600%2C600italic%2C700%2C700italic%2C800%2C800italic%2C900%2C900italic%7CRoboto+Slab%3A100%2C100italic%2C200%2C200italic%2C300%2C300italic%2C400%2C400italic%2C500%2C500italic%2C600%2C600italic%2C700%2C700italic%2C800%2C800italic%2C900%2C900italic%7CLato%3A100%2C100italic%2C200%2C200italic%2C300%2C300italic%2C400%2C400italic%2C500%2C500italic%2C600%2C600italic%2C700%2C700italic%2C800%2C800italic%2C900%2C900italic&#038;ver=5.7.6' type='text/css' media='all' />
+<link rel='stylesheet' id='elementor-icons-shared-0-css'  href='https://offpragasdedetizacao.com.br/wp-content/plugins/elementor/assets/lib/font-awesome/css/fontawesome.min.css?ver=5.15.1' type='text/css' media='all' />
+<link rel='stylesheet' id='elementor-icons-fa-brands-css'  href='https://offpragasdedetizacao.com.br/wp-content/plugins/elementor/assets/lib/font-awesome/css/brands.min.css?ver=5.15.1' type='text/css' media='all' />
+<link rel='stylesheet' id='elementor-icons-fa-solid-css'  href='https://offpragasdedetizacao.com.br/wp-content/plugins/elementor/assets/lib/font-awesome/css/solid.min.css?ver=5.15.1' type='text/css' media='all' />
+<script type='text/javascript' src='https://offpragasdedetizacao.com.br/wp-includes/js/jquery/jquery.min.js?ver=3.5.1' id='jquery-core-js'></script>
+<script type='text/javascript' src='https://offpragasdedetizacao.com.br/wp-includes/js/jquery/jquery-migrate.min.js?ver=3.3.2' id='jquery-migrate-js'></script>
+<script type='text/javascript' src='https://offpragasdedetizacao.com.br/wp-content/plugins/elementor/assets/lib/font-awesome/js/v4-shims.min.js?ver=3.1.4' id='font-awesome-4-shim-js'></script>
+<link rel="https://api.w.org/" href="https://offpragasdedetizacao.com.br/wp-json/" /><link rel="alternate" type="application/json" href="https://offpragasdedetizacao.com.br/wp-json/wp/v2/pages/9625" /><link rel="EditURI" type="application/rsd+xml" title="RSD" href="https://offpragasdedetizacao.com.br/xmlrpc.php?rsd" />
+<link rel="wlwmanifest" type="application/wlwmanifest+xml" href="https://offpragasdedetizacao.com.br/wp-includes/wlwmanifest.xml" /> 
+<meta name="generator" content="WordPress 5.7.6" />
+<link rel='shortlink' href='https://offpragasdedetizacao.com.br/' />
+<link rel="alternate" type="application/json+oembed" href="https://offpragasdedetizacao.com.br/wp-json/oembed/1.0/embed?url=https%3A%2F%2Foffpragasdedetizacao.com.br%2F" />
+<link rel="alternate" type="text/xml+oembed" href="https://offpragasdedetizacao.com.br/wp-json/oembed/1.0/embed?url=https%3A%2F%2Foffpragasdedetizacao.com.br%2F&#038;format=xml" />
+<!-- Google Tag Manager -->
+<script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
+new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
+j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
+'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
+})(window,document,'script','dataLayer','GTM-M56VNR7');</script>
+<!-- End Google Tag Manager -->
+         <noscript><style>.lazyload[data-src]{display:none !important;}</style></noscript><style>.lazyload{background-image:none !important;}.lazyload:before{background-image:none !important;}</style><style>.wp-block-gallery.is-cropped .blocks-gallery-item picture{height:100%;width:100%;}</style><link rel="icon" href="https://offpragasdedetizacao.com.br/wp-content/uploads/2018/09/cropped-favicon-casa-32x32.png" sizes="32x32" />
+<link rel="icon" href="https://offpragasdedetizacao.com.br/wp-content/uploads/2018/09/cropped-favicon-casa-192x192.png" sizes="192x192" />
+<link rel="apple-touch-icon" href="https://offpragasdedetizacao.com.br/wp-content/uploads/2018/09/cropped-favicon-casa-180x180.png" />
+<meta name="msapplication-TileImage" content="https://offpragasdedetizacao.com.br/wp-content/uploads/2018/09/cropped-favicon-casa-270x270.png" />
+            <style>
+              :root { 
+                --qlwapp-scheme-qlwapp_scheme_form_nonce:9ad88a5887;--qlwapp-scheme-_wp_http_referer:/wp-admin/admin.php?page=qlwapp_scheme;              }
+                                        </style>
+            <!-- OceanWP CSS -->
+<style type="text/css">
+/* General CSS */.container{width:1445px}#main #content-wrap,.separate-layout #main #content-wrap{padding-top:0;padding-bottom:0}/* Top Bar CSS */#top-bar-wrap,.oceanwp-top-bar-sticky{background-color:#f6f6f6}/* Header CSS */#site-logo #site-logo-inner,.oceanwp-social-menu .social-menu-inner,#site-header.full_screen-header .menu-bar-inner,.after-header-content .after-header-content-inner{height:65px}#site-navigation-wrap .dropdown-menu >li >a,.oceanwp-mobile-menu-icon a,.after-header-content-inner >a{line-height:65px}#site-header,.has-transparent-header .is-sticky #site-header,.has-vh-transparent .is-sticky #site-header.vertical-header,#searchform-header-replace{background-color:#000000}#site-header{border-color:rgba(0,0,0,0)}#site-header.has-header-media .overlay-header-media{background-color:rgba(247,247,247,0.3)}#site-logo #site-logo-inner a img,#site-header.center-header #site-navigation-wrap .middle-site-logo a img{max-width:118px}.effect-one #site-navigation-wrap .dropdown-menu >li >a.menu-link >span:after,.effect-three #site-navigation-wrap .dropdown-menu >li >a.menu-link >span:after,.effect-five #site-navigation-wrap .dropdown-menu >li >a.menu-link >span:before,.effect-five #site-navigation-wrap .dropdown-menu >li >a.menu-link >span:after,.effect-nine #site-navigation-wrap .dropdown-menu >li >a.menu-link >span:before,.effect-nine #site-navigation-wrap .dropdown-menu >li >a.menu-link >span:after{background-color:#f2f2f2}.effect-four #site-navigation-wrap .dropdown-menu >li >a.menu-link >span:before,.effect-four #site-navigation-wrap .dropdown-menu >li >a.menu-link >span:after,.effect-seven #site-navigation-wrap .dropdown-menu >li >a.menu-link:hover >span:after,.effect-seven #site-navigation-wrap .dropdown-menu >li.sfHover >a.menu-link >span:after{color:#f2f2f2}.effect-seven #site-navigation-wrap .dropdown-menu >li >a.menu-link:hover >span:after,.effect-seven #site-navigation-wrap .dropdown-menu >li.sfHover >a.menu-link >span:after{text-shadow:10px 0 #f2f2f2,-10px 0 #f2f2f2}#site-navigation-wrap .dropdown-menu >li >a{padding:0 20px}#site-navigation-wrap .dropdown-menu >li >a,.oceanwp-mobile-menu-icon a,#searchform-header-replace-close{color:#ffffff}#site-navigation-wrap .dropdown-menu >li >a:hover,.oceanwp-mobile-menu-icon a:hover,#searchform-header-replace-close:hover{color:#dd3333}#site-navigation-wrap .dropdown-menu >.current-menu-item >a,#site-navigation-wrap .dropdown-menu >.current-menu-ancestor >a,#site-navigation-wrap .dropdown-menu >.current-menu-item >a:hover,#site-navigation-wrap .dropdown-menu >.current-menu-ancestor >a:hover{color:#ce1836}.dropdown-menu .sub-menu{min-width:183px}.dropdown-menu .sub-menu,#searchform-dropdown,.current-shop-items-dropdown{border-color:#e1dede}.dropdown-menu ul li a.menu-link:hover{background-color:#dd3333}/* Blog CSS */.single-post.content-max-width .thumbnail,.single-post.content-max-width .entry-header,.single-post.content-max-width ul.meta,.single-post.content-max-width .entry-content p,.single-post.content-max-width .entry-content h1,.single-post.content-max-width .entry-content h2,.single-post.content-max-width .entry-content h3,.single-post.content-max-width .entry-content h4,.single-post.content-max-width .entry-content h5,.single-post.content-max-width .entry-content h6,.single-post.content-max-width .wp-block-image,.single-post.content-max-width .wp-block-gallery,.single-post.content-max-width .wp-block-video,.single-post.content-max-width .wp-block-quote,.single-post.content-max-width .wp-block-text-columns,.single-post.content-max-width .entry-content ul,.single-post.content-max-width .entry-content ol,.single-post.content-max-width .wp-block-cover-text,.single-post.content-max-width .post-tags,.single-post.content-max-width .comments-area{max-width:1300px}.single-post.content-max-width .wp-block-image.alignleft,.single-post.content-max-width .wp-block-image.alignright{max-width:650px}.single-post.content-max-width .wp-block-image.alignleft{margin-left:calc( 50% - 650px)}.single-post.content-max-width .wp-block-image.alignright{margin-right:calc( 50% - 650px)}/* Typography CSS */body{font-size:18px;color:#000000}h1{font-size:35px;color:#000000}h2{font-size:32px}h3{font-weight:900;font-style:italic;font-size:30px;line-height:2;letter-spacing:.3px}#site-navigation-wrap .dropdown-menu >li >a,#site-header.full_screen-header .fs-dropdown-menu >li >a,#site-header.top-header #site-navigation-wrap .dropdown-menu >li >a,#site-header.center-header #site-navigation-wrap .dropdown-menu >li >a,#site-header.medium-header #site-navigation-wrap .dropdown-menu >li >a,.oceanwp-mobile-menu-icon a{font-family:Open Sans;font-style:normal;font-size:14px;letter-spacing:1.7px}
+</style>	
+<meta name="p:domain_verify" content="fb832416f1161bf3049d5a4ae881208c"/>	
+	
+	
+<meta name="p:domain_verify" content="81422a5d1dc4b95203a4a2e6a4459dbb"/>	
+	
+</head>
+
+<body data-rsssl=1 class="home page-template-default page page-id-9625 wp-custom-logo wp-schema-pro-1.3.0 oceanwp-theme sidebar-mobile default-breakpoint content-full-width content-max-width page-header-disabled has-breadcrumbs elementor-default elementor-kit-5953 elementor-page elementor-page-9625">
+<script data-cfasync="false">if(ewww_webp_supported){document.body.classList.add("webp-support");}</script><!--  Clickcease.com tracking-->
+<script type="text/javascript">var script = document.createElement("script");script.async = true; script.type = "text/javascript";var target = 'https://www.clickcease.com/monitor/stat.js';script.src = target;var elem = document.head;elem.appendChild(script);</script>
+<noscript><a href="https://www.clickcease.com" rel="nofollow"><img src="https://monitor.clickcease.com/stats/stats.aspx" alt="Clickcease" /></a></noscript>
+<!--  Clickcease.com tracking-->
+
+	
+	<div id="outer-wrap" class="site clr">
+
+		
+		<div id="wrap" class="clr">
+
+			
+			
+<header id="site-header" class="minimal-header effect-ten clr" data-height="65" itemscope="itemscope" itemtype="http://schema.org/WPHeader">
+
+	
+		
+			
+			<div id="site-header-inner" class="clr container">
+
+				
+				
+
+<div id="site-logo" class="clr" itemscope itemtype="http://schema.org/Brand">
+
+	
+	<div id="site-logo-inner" class="clr">
+
+		<a href="https://offpragasdedetizacao.com.br/" class="custom-logo-link" rel="home" aria-current="page"><picture><source  sizes='(max-width: 466px) 100vw, 466px' type='image/webp' data-srcset="https://offpragasdedetizacao.com.br/wp-content/uploads/2020/04/cropped-off-pragas-logo-branco.png.webp 466w, https://offpragasdedetizacao.com.br/wp-content/uploads/2020/04/cropped-off-pragas-logo-branco-300x63.png.webp 300w, https://offpragasdedetizacao.com.br/wp-content/uploads/2020/04/cropped-off-pragas-logo-branco-285x60.png.webp 285w"><img width="466" height="98" src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAdIAAABiAQAAAADMpm9aAAAAAnRSTlMAAHaTzTgAAAAcSURBVFjD7cEBDQAAAMKg909tDwcUAAAAAAD8GBb4AAEKXrXiAAAAAElFTkSuQmCC" class="custom-logo lazyload" alt="offpragasdedetizadora"   data-eio="p" data-src="https://offpragasdedetizacao.com.br/wp-content/uploads/2020/04/cropped-off-pragas-logo-branco.png" decoding="async" data-srcset="https://offpragasdedetizacao.com.br/wp-content/uploads/2020/04/cropped-off-pragas-logo-branco.png 466w, https://offpragasdedetizacao.com.br/wp-content/uploads/2020/04/cropped-off-pragas-logo-branco-300x63.png 300w, https://offpragasdedetizacao.com.br/wp-content/uploads/2020/04/cropped-off-pragas-logo-branco-285x60.png 285w" data-sizes="auto" /><noscript><img width="466" height="98" src="https://offpragasdedetizacao.com.br/wp-content/uploads/2020/04/cropped-off-pragas-logo-branco.png" class="custom-logo" alt="offpragasdedetizadora" srcset="https://offpragasdedetizacao.com.br/wp-content/uploads/2020/04/cropped-off-pragas-logo-branco.png 466w, https://offpragasdedetizacao.com.br/wp-content/uploads/2020/04/cropped-off-pragas-logo-branco-300x63.png 300w, https://offpragasdedetizacao.com.br/wp-content/uploads/2020/04/cropped-off-pragas-logo-branco-285x60.png 285w" sizes="(max-width: 466px) 100vw, 466px" data-eio="l" /></noscript></picture></a>
+	</div><!-- #site-logo-inner -->
+
+	
+	
+</div><!-- #site-logo -->
+
+			<div id="site-navigation-wrap" class="clr">
+		
+			
+			
+			<nav id="site-navigation" class="navigation main-navigation clr" itemscope="itemscope" itemtype="http://schema.org/SiteNavigationElement">
+
+				<ul id="menu-menu-principal" class="main-menu dropdown-menu sf-menu"><li id="menu-item-9631" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-home current-menu-item page_item page-item-9625 current_page_item menu-item-9631"><a href="https://offpragasdedetizacao.com.br/" class="menu-link"><span class="text-wrap">Dedetizadora SP</span></a></li><li id="menu-item-5863" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-5863"><a href="https://offpragasdedetizacao.com.br/descupinizacao/" class="menu-link"><span class="text-wrap">Descupinização</span></a></li><li id="menu-item-9619" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-9619"><a href="https://splavagemeimpermeabilizacao.com/" class="menu-link"><span class="text-wrap">Limpeza de Sofá</span></a></li><li id="menu-item-6258" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-has-children dropdown menu-item-6258"><a href="#" class="menu-link"><span class="text-wrap">Outros Serviços <span class="nav-arrow fa fa-angle-down"></span></span></a>
+<ul class="sub-menu">
+	<li id="menu-item-6253" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-6253"><a href="https://offpragasdedetizacao.com.br/dedetizacao-de-formigas/" class="menu-link"><span class="text-wrap">dedetização de formigas</span></a></li>	<li id="menu-item-5850" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-5850"><a href="https://offpragasdedetizacao.com.br/desratizacao/" class="menu-link"><span class="text-wrap">Desratização</span></a></li>	<li id="menu-item-6252" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-6252"><a href="https://offpragasdedetizacao.com.br/dedetizacao-de-barata/" class="menu-link"><span class="text-wrap">dedetização de barata</span></a></li>	<li id="menu-item-6249" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-6249"><a href="https://offpragasdedetizacao.com.br/dedetizacao-de-carrapatos/" class="menu-link"><span class="text-wrap">dedetização de carrapatos</span></a></li>	<li id="menu-item-6251" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-6251"><a href="https://offpragasdedetizacao.com.br/dedetizacao-de-tracas/" class="menu-link"><span class="text-wrap">dedetização de traças</span></a></li>	<li id="menu-item-6250" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-6250"><a href="https://offpragasdedetizacao.com.br/dedetizacao-de-pulga/" class="menu-link"><span class="text-wrap">dedetização de pulga</span></a></li>	<li id="menu-item-6256" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-6256"><a href="https://offpragasdedetizacao.com.br/dedetizacao-de-percevejo/" class="menu-link"><span class="text-wrap">dedetização de percevejo</span></a></li>	<li id="menu-item-5864" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-5864"><a href="https://offpragasdedetizacao.com.br/limpeza-de-caixa-d-agua/" class="menu-link"><span class="text-wrap">Limpeza de Caixa d’ Água​</span></a></li>	<li id="menu-item-10860" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-has-children dropdown menu-item-10860"><a href="#" class="menu-link"><span class="text-wrap">Regiões Atendidas<span class="nav-arrow fa fa-angle-right"></span></span></a>
+	<ul class="sub-menu">
+		<li id="menu-item-10861" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-10861"><a href="https://offpragasdedetizacao.com.br/dedetizadora-zona-norte/" class="menu-link"><span class="text-wrap">Dedetizadora Zona Norte</span></a></li>		<li id="menu-item-10862" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-10862"><a href="https://offpragasdedetizacao.com.br/dedetizadora-zona-leste/" class="menu-link"><span class="text-wrap">Dedetizadora Zona Leste</span></a></li>		<li id="menu-item-10863" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-10863"><a href="https://offpragasdedetizacao.com.br/dedetizadora-zona-oeste/" class="menu-link"><span class="text-wrap">Dedetizadora Zona Oeste</span></a></li>		<li id="menu-item-10864" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-10864"><a href="https://offpragasdedetizacao.com.br/dedetizadora-zona-sul/" class="menu-link"><span class="text-wrap">Dedetizadora Zona Sul</span></a></li>	</ul>
+</li></ul>
+</li><li id="menu-item-9663" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-9663"><a href="https://offpragasdedetizacao.com.br/blog/" class="menu-link"><span class="text-wrap">Blog</span></a></li><li id="menu-item-1104" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-1104"><a href="https://offpragasdedetizacao.com.br/contato/" class="menu-link"><span class="text-wrap">Contato</span></a></li></ul>
+			</nav><!-- #site-navigation -->
+
+			
+			
+					</div><!-- #site-navigation-wrap -->
+		
+		
+	
+				
+	<div class="oceanwp-mobile-menu-icon clr mobile-right">
+
+		
+		
+		
+		<a href="#" class="mobile-menu">
+							<i class="fa fa-bars"></i>
+							<span class="oceanwp-text">Menu</span>
+
+						</a>
+
+		
+		
+		
+	</div><!-- #oceanwp-mobile-menu-navbar -->
+
+
+			</div><!-- #site-header-inner -->
+
+			
+			
+		
+				
+	
+</header><!-- #site-header -->
+
+
+						
+			<main id="main" class="site-main clr" >
+
+					
+				
+				<script src="//code-sa1.jivosite.com/widget/VjO5Dqkc1R" async></script>
+
+				
+	
+	<div id="content-wrap" class="container clr">
+
+		
+		<div id="primary" class="content-area clr">
+
+			
+			<div id="content" class="site-content clr">
+
+				
+				
+<article class="single-page-article clr">
+
+	
+<div class="entry clr" itemprop="text">
+				<div data-elementor-type="wp-page" data-elementor-id="9625" class="elementor elementor-9625" data-elementor-settings="[]">
+						<div class="elementor-inner">
+							<div class="elementor-section-wrap">
+							<section class="elementor-section elementor-top-section elementor-element elementor-element-3660e20a elementor-section-stretched elementor-section-full_width elementor-hidden-tablet elementor-hidden-phone elementor-section-height-default elementor-section-height-default" data-id="3660e20a" data-element_type="section" data-settings="{&quot;stretch_section&quot;:&quot;section-stretched&quot;,&quot;background_background&quot;:&quot;classic&quot;}">
+							<div class="elementor-background-overlay"></div>
+							<div class="elementor-container elementor-column-gap-default">
+							<div class="elementor-row">
+					<div class="elementor-column elementor-col-100 elementor-top-column elementor-element elementor-element-786417fc" data-id="786417fc" data-element_type="column">
+			<div class="elementor-column-wrap elementor-element-populated">
+							<div class="elementor-widget-wrap">
+						<div class="elementor-element elementor-element-55e71319 elementor-widget elementor-widget-heading" data-id="55e71319" data-element_type="widget" data-widget_type="heading.default">
+				<div class="elementor-widget-container">
+			<h2 class="elementor-heading-title elementor-size-default">Empresa Dedetizadora São Paulo</h2>		</div>
+				</div>
+				<div class="elementor-element elementor-element-16977378 elementor-widget elementor-widget-heading" data-id="16977378" data-element_type="widget" data-widget_type="heading.default">
+				<div class="elementor-widget-container">
+			<h2 class="elementor-heading-title elementor-size-default">Controladora de Pragas urbanas</h2>		</div>
+				</div>
+				<div class="elementor-element elementor-element-17a66f69 elementor-align-center elementor-widget elementor-widget-button" data-id="17a66f69" data-element_type="widget" data-widget_type="button.default">
+				<div class="elementor-widget-container">
+					<div class="elementor-button-wrapper">
+			<a href="/contato" class="elementor-button-link elementor-button elementor-size-sm" role="button">
+						<span class="elementor-button-content-wrapper">
+						<span class="elementor-button-text">Solicite Seu Orçamento</span>
+		</span>
+					</a>
+		</div>
+				</div>
+				</div>
+						</div>
+					</div>
+		</div>
+								</div>
+					</div>
+		</section>
+				<section class="elementor-section elementor-top-section elementor-element elementor-element-5f7d3300 elementor-section-stretched elementor-section-full_width elementor-hidden-desktop elementor-section-height-default elementor-section-height-default" data-id="5f7d3300" data-element_type="section" data-settings="{&quot;stretch_section&quot;:&quot;section-stretched&quot;,&quot;background_background&quot;:&quot;classic&quot;}">
+							<div class="elementor-background-overlay"></div>
+							<div class="elementor-container elementor-column-gap-default">
+							<div class="elementor-row">
+					<div class="elementor-column elementor-col-100 elementor-top-column elementor-element elementor-element-efc9328" data-id="efc9328" data-element_type="column">
+			<div class="elementor-column-wrap elementor-element-populated">
+							<div class="elementor-widget-wrap">
+						<div class="elementor-element elementor-element-6f120bc5 elementor-widget elementor-widget-heading" data-id="6f120bc5" data-element_type="widget" data-widget_type="heading.default">
+				<div class="elementor-widget-container">
+			<h2 class="elementor-heading-title elementor-size-default">Empresa Dedetizadora em São Paulo</h2>		</div>
+				</div>
+				<div class="elementor-element elementor-element-6b078fbd elementor-widget elementor-widget-heading" data-id="6b078fbd" data-element_type="widget" data-widget_type="heading.default">
+				<div class="elementor-widget-container">
+			<h2 class="elementor-heading-title elementor-size-default">Controladora de<br>Pragas urbanas</h2>		</div>
+				</div>
+				<div class="elementor-element elementor-element-3111f58c elementor-align-center elementor-widget elementor-widget-button" data-id="3111f58c" data-element_type="widget" data-widget_type="button.default">
+				<div class="elementor-widget-container">
+					<div class="elementor-button-wrapper">
+			<a href="https://wa.me/5511962138973" class="elementor-button-link elementor-button elementor-size-sm" role="button">
+						<span class="elementor-button-content-wrapper">
+						<span class="elementor-button-icon elementor-align-icon-left">
+				<i aria-hidden="true" class="fab fa-whatsapp"></i>			</span>
+						<span class="elementor-button-text">Solicite Seu Orçamento</span>
+		</span>
+					</a>
+		</div>
+				</div>
+				</div>
+						</div>
+					</div>
+		</div>
+								</div>
+					</div>
+		</section>
+				<section class="elementor-section elementor-top-section elementor-element elementor-element-e080caf elementor-section-full_width elementor-section-height-default elementor-section-height-default" data-id="e080caf" data-element_type="section">
+						<div class="elementor-container elementor-column-gap-default">
+							<div class="elementor-row">
+					<div class="elementor-column elementor-col-100 elementor-top-column elementor-element elementor-element-b1cc389" data-id="b1cc389" data-element_type="column">
+			<div class="elementor-column-wrap elementor-element-populated">
+							<div class="elementor-widget-wrap">
+						<div class="elementor-element elementor-element-e9bd817 elementor-widget elementor-widget-heading" data-id="e9bd817" data-element_type="widget" data-widget_type="heading.default">
+				<div class="elementor-widget-container">
+			<h1 class="elementor-heading-title elementor-size-default">Dedetizadora SP</h1>		</div>
+				</div>
+						</div>
+					</div>
+		</div>
+								</div>
+					</div>
+		</section>
+				<section class="elementor-section elementor-top-section elementor-element elementor-element-733a1367 elementor-section-full_width elementor-section-height-default elementor-section-height-default" data-id="733a1367" data-element_type="section">
+						<div class="elementor-container elementor-column-gap-default">
+							<div class="elementor-row">
+					<div class="elementor-column elementor-col-100 elementor-top-column elementor-element elementor-element-192d24d0" data-id="192d24d0" data-element_type="column">
+			<div class="elementor-column-wrap elementor-element-populated">
+							<div class="elementor-widget-wrap">
+						<div class="elementor-element elementor-element-61ff212b elementor-widget elementor-widget-text-editor" data-id="61ff212b" data-element_type="widget" data-widget_type="text-editor.default">
+				<div class="elementor-widget-container">
+					<div class="elementor-text-editor elementor-clearfix"><p><b><i><span style="font-size: 24px; color: rgba(5, 4, 2, 0.73);">Seja Bem-Vindo a </span><span style="font-size: 24px; color: rgba(5, 4, 2, 0.73);">Offpragas Dedetizadora SP!</span><span style="font-size: 24px; color: rgba(5, 4, 2, 0.73);"> Somos a Melhor Empresa Dedetizadora em São Paulo.</span></i></b></p><p>Nossos Serviços são rápidos e eficazes e <strong>atendemos qualquer região de São Paulo</strong>. Conte com nossos Serviços especializados para dedetizar sua Casa ou empresa.</p><p><strong>Precisa de um Serviço de Dedetização e Desratização em São Paulo? Chame a Offpragas (11) 96213-8973. Oferecemos um serviço de dedetização de qualidade em qualquer bairro de SP e Grande São Paulo. </strong></p><p><strong>Empresa Licenciada e Certificada</strong> em todos os órgãos competentes. Nossos Técnicos são treinandos e qualificados, passando por constantes aperfeiçoamentos.</p><p>Temos equipe qualificada e conseguimos atender todas suas necessidades de dedetização contra: baratas, formigas, ratos, percevejos, pulgas, carrapatos, traças, cupins e diversas outras.</p><p><em>Acabe agora com as pragas e fique livre de preocupações. Solicite um Orçamento Rápido e Fácil.</em></p><p>EXECUTAMOS O SERVIÇO DE DEDETIZAÇÃO COM O MELHOR PREÇO DE SP! CONHEÇA NOSSOS SERVIÇOS COM A GARANTIA DA OFFPRAGAS DEDETIZADORA.</p></div>
+				</div>
+				</div>
+						</div>
+					</div>
+		</div>
+								</div>
+					</div>
+		</section>
+				<section class="elementor-section elementor-top-section elementor-element elementor-element-12ad572 elementor-section-boxed elementor-section-height-default elementor-section-height-default" data-id="12ad572" data-element_type="section">
+						<div class="elementor-container elementor-column-gap-default">
+							<div class="elementor-row">
+					<div class="elementor-column elementor-col-100 elementor-top-column elementor-element elementor-element-9042386" data-id="9042386" data-element_type="column">
+			<div class="elementor-column-wrap elementor-element-populated">
+							<div class="elementor-widget-wrap">
+						<div class="elementor-element elementor-element-638ecfb elementor-aspect-ratio-169 elementor-widget elementor-widget-video" data-id="638ecfb" data-element_type="widget" data-settings="{&quot;youtube_url&quot;:&quot;https:\/\/youtu.be\/T791F7w6Cdc&quot;,&quot;mute&quot;:&quot;yes&quot;,&quot;loop&quot;:&quot;yes&quot;,&quot;video_type&quot;:&quot;youtube&quot;,&quot;controls&quot;:&quot;yes&quot;,&quot;aspect_ratio&quot;:&quot;169&quot;}" data-widget_type="video.default">
+				<div class="elementor-widget-container">
+					<div class="elementor-wrapper elementor-fit-aspect-ratio elementor-open-inline">
+			<div class="elementor-video"></div>		</div>
+				</div>
+				</div>
+						</div>
+					</div>
+		</div>
+								</div>
+					</div>
+		</section>
+				<section class="elementor-section elementor-top-section elementor-element elementor-element-f16b065 elementor-section-stretched elementor-section-boxed elementor-section-height-default elementor-section-height-default" data-id="f16b065" data-element_type="section" data-settings="{&quot;stretch_section&quot;:&quot;section-stretched&quot;}">
+						<div class="elementor-container elementor-column-gap-default">
+							<div class="elementor-row">
+					<div class="elementor-column elementor-col-100 elementor-top-column elementor-element elementor-element-3f08224" data-id="3f08224" data-element_type="column">
+			<div class="elementor-column-wrap elementor-element-populated">
+							<div class="elementor-widget-wrap">
+						<div class="elementor-element elementor-element-7b228b6 elementor-widget-divider--view-line elementor-widget elementor-widget-divider" data-id="7b228b6" data-element_type="widget" data-widget_type="divider.default">
+				<div class="elementor-widget-container">
+					<div class="elementor-divider">
+			<span class="elementor-divider-separator">
+						</span>
+		</div>
+				</div>
+				</div>
+				<div class="elementor-element elementor-element-9b59b7b elementor-widget elementor-widget-heading" data-id="9b59b7b" data-element_type="widget" data-widget_type="heading.default">
+				<div class="elementor-widget-container">
+			<h2 class="elementor-heading-title elementor-size-default">Veja os Preços para o Serviço de Dedetização</h2>		</div>
+				</div>
+				<div class="elementor-element elementor-element-700ebd2 elementor-widget elementor-widget-heading" data-id="700ebd2" data-element_type="widget" data-widget_type="heading.default">
+				<div class="elementor-widget-container">
+			<h2 class="elementor-heading-title elementor-size-default"><h2 data-elementor-setting-key="title" data-pen-placeholder="Digite aqui..." style="font-variant-ligatures: normal; font-variant-caps: normal; font-size: 18px; font-style: normal; font-weight: 600; color: rgb(75, 70, 70); text-transform: none;"> Tabela de Preços para Dedetização em Residências</h4></h2>		</div>
+				</div>
+				<div class="elementor-element elementor-element-24b46f9 elementor-widget elementor-widget-shortcode" data-id="24b46f9" data-element_type="widget" data-widget_type="shortcode.default">
+				<div class="elementor-widget-container">
+					<div class="elementor-shortcode">
+<table id="tablepress-1" class="tablepress tablepress-id-1">
+<thead>
+<tr class="row-1 odd">
+	<th class="column-1">&nbsp;</th><th class="column-2">Barata</th><th class="column-3">Formiga</th><th class="column-4">Rato</th>
+</tr>
+</thead>
+<tbody class="row-hover">
+<tr class="row-2 even">
+	<td class="column-1">Apto 1 Dorm.</td><td class="column-2">R$ 249,00</td><td class="column-3">R$ 249,00</td><td class="column-4">R$ 259,00</td>
+</tr>
+<tr class="row-3 odd">
+	<td class="column-1">Apto 2 Dorm.</td><td class="column-2">R$ 269,00</td><td class="column-3">R$ 269,00</td><td class="column-4">R$ 289,00</td>
+</tr>
+<tr class="row-4 even">
+	<td class="column-1">Apto 3 Dorm.</td><td class="column-2">R$ 289,00</td><td class="column-3">R$ 289,00</td><td class="column-4">R$ 349,00</td>
+</tr>
+<tr class="row-5 odd">
+	<td class="column-1">Apto 4 Dorm.</td><td class="column-2">R$ 309,00</td><td class="column-3">R$ 309,00</td><td class="column-4">R$ 369,00</td>
+</tr>
+<tr class="row-6 even">
+	<td class="column-1">Casa 1 Dorm.</td><td class="column-2">R$ 259,00</td><td class="column-3">R$ 259,00</td><td class="column-4">R$ 279,00</td>
+</tr>
+<tr class="row-7 odd">
+	<td class="column-1">Casa 2 Dorm.</td><td class="column-2">R$ 279,00</td><td class="column-3">R$ 279,00</td><td class="column-4">R$ 299,00</td>
+</tr>
+<tr class="row-8 even">
+	<td class="column-1">Casa 3 Dorm.</td><td class="column-2">R$ 299,00</td><td class="column-3">R$ 299,00</td><td class="column-4">R$ 359,00</td>
+</tr>
+<tr class="row-9 odd">
+	<td class="column-1">Casa 4 Dorm.</td><td class="column-2">R$ 319,00</td><td class="column-3">R$ 319,00</td><td class="column-4">R$ 379,00</td>
+</tr>
+</tbody>
+</table>
+<!-- #tablepress-1 from cache --></div>
+				</div>
+				</div>
+				<div class="elementor-element elementor-element-1ba9ae9 elementor-widget elementor-widget-text-editor" data-id="1ba9ae9" data-element_type="widget" data-widget_type="text-editor.default">
+				<div class="elementor-widget-container">
+					<div class="elementor-text-editor elementor-clearfix"><p>*Poderá ser cobrada taxa de deslocamento em algumas regiões.</p></div>
+				</div>
+				</div>
+						</div>
+					</div>
+		</div>
+								</div>
+					</div>
+		</section>
+				<section class="elementor-section elementor-top-section elementor-element elementor-element-74b10f84 elementor-section-stretched elementor-section-boxed elementor-section-height-default elementor-section-height-default" data-id="74b10f84" data-element_type="section" data-settings="{&quot;stretch_section&quot;:&quot;section-stretched&quot;}">
+						<div class="elementor-container elementor-column-gap-default">
+							<div class="elementor-row">
+					<div class="elementor-column elementor-col-100 elementor-top-column elementor-element elementor-element-28e30707" data-id="28e30707" data-element_type="column">
+			<div class="elementor-column-wrap elementor-element-populated">
+							<div class="elementor-widget-wrap">
+						<div class="elementor-element elementor-element-65e5145 elementor-widget elementor-widget-heading" data-id="65e5145" data-element_type="widget" data-widget_type="heading.default">
+				<div class="elementor-widget-container">
+			<h2 class="elementor-heading-title elementor-size-default"><h2 data-elementor-setting-key="title" data-pen-placeholder="Digite aqui..." style="font-variant-ligatures: normal; font-variant-caps: normal; font-size: 18px; font-style: normal; font-weight: 600; color: rgb(75, 70, 70); text-transform: none;"> Tabela de Preços para Dedetização Comercial</h4></h2>		</div>
+				</div>
+				<div class="elementor-element elementor-element-3dde04bd elementor-widget elementor-widget-shortcode" data-id="3dde04bd" data-element_type="widget" data-widget_type="shortcode.default">
+				<div class="elementor-widget-container">
+					<div class="elementor-shortcode">
+<table id="tablepress-2" class="tablepress tablepress-id-2">
+<thead>
+<tr class="row-1 odd">
+	<th class="column-1">&nbsp;</th><th class="column-2">Barata</th><th class="column-3">Formiga</th><th class="column-4">Rato</th>
+</tr>
+</thead>
+<tbody class="row-hover">
+<tr class="row-2 even">
+	<td class="column-1">Até 100m²</td><td class="column-2">R$ 269,00</td><td class="column-3">R$ 269,00</td><td class="column-4">R$ 299,00</td>
+</tr>
+<tr class="row-3 odd">
+	<td class="column-1">Até 150m²</td><td class="column-2">R$ 279,00</td><td class="column-3">R$ 279,00</td><td class="column-4">R$ 319,00</td>
+</tr>
+<tr class="row-4 even">
+	<td class="column-1">Até 200m²</td><td class="column-2">R$ 289,00</td><td class="column-3">R$ 289,00</td><td class="column-4">R$ 339,00</td>
+</tr>
+<tr class="row-5 odd">
+	<td class="column-1">Até 250m²</td><td class="column-2">R$ 309,00</td><td class="column-3">R$ 309,00</td><td class="column-4">R$ 359,00</td>
+</tr>
+<tr class="row-6 even">
+	<td class="column-1">Até 300m²</td><td class="column-2">R$ 329,00</td><td class="column-3">R$ 329,00</td><td class="column-4">R$ 379,00</td>
+</tr>
+</tbody>
+</table>
+<!-- #tablepress-2 from cache --></div>
+				</div>
+				</div>
+				<div class="elementor-element elementor-element-16e69589 elementor-widget elementor-widget-text-editor" data-id="16e69589" data-element_type="widget" data-widget_type="text-editor.default">
+				<div class="elementor-widget-container">
+					<div class="elementor-text-editor elementor-clearfix"><p>*Poderá ser cobrada taxa de deslocamento em algumas regiões. Consulte tabelas de segmentos atendidos nestes valores.</p></div>
+				</div>
+				</div>
+						</div>
+					</div>
+		</div>
+								</div>
+					</div>
+		</section>
+				<section class="elementor-section elementor-top-section elementor-element elementor-element-3c3683be elementor-section-stretched elementor-section-boxed elementor-section-height-default elementor-section-height-default" data-id="3c3683be" data-element_type="section" data-settings="{&quot;stretch_section&quot;:&quot;section-stretched&quot;}">
+						<div class="elementor-container elementor-column-gap-default">
+							<div class="elementor-row">
+					<div class="elementor-column elementor-col-100 elementor-top-column elementor-element elementor-element-7114ca21" data-id="7114ca21" data-element_type="column">
+			<div class="elementor-column-wrap elementor-element-populated">
+							<div class="elementor-widget-wrap">
+						<div class="elementor-element elementor-element-3d6d2d2c elementor-widget-divider--view-line elementor-widget elementor-widget-divider" data-id="3d6d2d2c" data-element_type="widget" data-widget_type="divider.default">
+				<div class="elementor-widget-container">
+					<div class="elementor-divider">
+			<span class="elementor-divider-separator">
+						</span>
+		</div>
+				</div>
+				</div>
+				<div class="elementor-element elementor-element-5e401746 elementor-widget elementor-widget-heading" data-id="5e401746" data-element_type="widget" data-widget_type="heading.default">
+				<div class="elementor-widget-container">
+			<h2 class="elementor-heading-title elementor-size-default">Na Mídia</h2>		</div>
+				</div>
+				<div class="elementor-element elementor-element-2a16fbd elementor-widget elementor-widget-image" data-id="2a16fbd" data-element_type="widget" data-widget_type="image.default">
+				<div class="elementor-widget-container">
+					<div class="elementor-image">
+										<picture><source  sizes='(max-width: 80px) 100vw, 80px' type='image/webp' data-srcset="https://offpragasdedetizacao.com.br/wp-content/uploads/2021/11/sbt-logo-1-80x80.png.webp 80w, https://offpragasdedetizacao.com.br/wp-content/uploads/2021/11/sbt-logo-1-300x300.png.webp 300w, https://offpragasdedetizacao.com.br/wp-content/uploads/2021/11/sbt-logo-1-1024x1024.png.webp 1024w, https://offpragasdedetizacao.com.br/wp-content/uploads/2021/11/sbt-logo-1-768x768.png.webp 768w, https://offpragasdedetizacao.com.br/wp-content/uploads/2021/11/sbt-logo-1-1536x1536.png.webp 1536w, https://offpragasdedetizacao.com.br/wp-content/uploads/2021/11/sbt-logo-1-2048x2048.png.webp 2048w, https://offpragasdedetizacao.com.br/wp-content/uploads/2021/11/sbt-logo-1.png.webp 1920w"><img width="80" height="80" src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAFAAAABQAQAAAACmas8AAAAAAnRSTlMAAHaTzTgAAAARSURBVCjPY2AYBaNgFNALAAADcAABkVpjHQAAAABJRU5ErkJggg==" class="attachment-thumbnail size-thumbnail lazyload" alt="sbt"   data-eio="p" data-src="https://offpragasdedetizacao.com.br/wp-content/uploads/2021/11/sbt-logo-1-80x80.png" decoding="async" data-srcset="https://offpragasdedetizacao.com.br/wp-content/uploads/2021/11/sbt-logo-1-80x80.png 80w, https://offpragasdedetizacao.com.br/wp-content/uploads/2021/11/sbt-logo-1-300x300.png 300w, https://offpragasdedetizacao.com.br/wp-content/uploads/2021/11/sbt-logo-1-1024x1024.png 1024w, https://offpragasdedetizacao.com.br/wp-content/uploads/2021/11/sbt-logo-1-768x768.png 768w, https://offpragasdedetizacao.com.br/wp-content/uploads/2021/11/sbt-logo-1-1536x1536.png 1536w, https://offpragasdedetizacao.com.br/wp-content/uploads/2021/11/sbt-logo-1-2048x2048.png 2048w, https://offpragasdedetizacao.com.br/wp-content/uploads/2021/11/sbt-logo-1.png 1920w" data-sizes="auto" /><noscript><img width="80" height="80" src="https://offpragasdedetizacao.com.br/wp-content/uploads/2021/11/sbt-logo-1-80x80.png" class="attachment-thumbnail size-thumbnail" alt="sbt" srcset="https://offpragasdedetizacao.com.br/wp-content/uploads/2021/11/sbt-logo-1-80x80.png 80w, https://offpragasdedetizacao.com.br/wp-content/uploads/2021/11/sbt-logo-1-300x300.png 300w, https://offpragasdedetizacao.com.br/wp-content/uploads/2021/11/sbt-logo-1-1024x1024.png 1024w, https://offpragasdedetizacao.com.br/wp-content/uploads/2021/11/sbt-logo-1-768x768.png 768w, https://offpragasdedetizacao.com.br/wp-content/uploads/2021/11/sbt-logo-1-1536x1536.png 1536w, https://offpragasdedetizacao.com.br/wp-content/uploads/2021/11/sbt-logo-1-2048x2048.png 2048w, https://offpragasdedetizacao.com.br/wp-content/uploads/2021/11/sbt-logo-1.png 1920w" sizes="(max-width: 80px) 100vw, 80px" data-eio="l" /></noscript></picture>											</div>
+				</div>
+				</div>
+				<div class="elementor-element elementor-element-45199af elementor-widget elementor-widget-text-editor" data-id="45199af" data-element_type="widget" data-widget_type="text-editor.default">
+				<div class="elementor-widget-container">
+					<div class="elementor-text-editor elementor-clearfix"><p style="text-align: center;">A <b>Offpragas Dedetizadora</b> concedeu uma Entrevista Exclusiva para o</p>
+<p>Programa no <strong>SBT Foco em Limpeza</strong>, assista abaixo:</p></div>
+				</div>
+				</div>
+						</div>
+					</div>
+		</div>
+								</div>
+					</div>
+		</section>
+				<section class="elementor-section elementor-top-section elementor-element elementor-element-cf51ff2 elementor-section-boxed elementor-section-height-default elementor-section-height-default" data-id="cf51ff2" data-element_type="section">
+						<div class="elementor-container elementor-column-gap-default">
+							<div class="elementor-row">
+					<div class="elementor-column elementor-col-100 elementor-top-column elementor-element elementor-element-d0e29f3" data-id="d0e29f3" data-element_type="column">
+			<div class="elementor-column-wrap elementor-element-populated">
+							<div class="elementor-widget-wrap">
+						<div class="elementor-element elementor-element-00b1183 elementor-aspect-ratio-169 elementor-widget elementor-widget-video" data-id="00b1183" data-element_type="widget" data-settings="{&quot;youtube_url&quot;:&quot;https:\/\/www.youtube.com\/watch?v=ZHHQkZeTZXA&quot;,&quot;mute&quot;:&quot;yes&quot;,&quot;loop&quot;:&quot;yes&quot;,&quot;start&quot;:1434,&quot;video_type&quot;:&quot;youtube&quot;,&quot;controls&quot;:&quot;yes&quot;,&quot;aspect_ratio&quot;:&quot;169&quot;}" data-widget_type="video.default">
+				<div class="elementor-widget-container">
+					<div class="elementor-wrapper elementor-fit-aspect-ratio elementor-open-inline">
+			<div class="elementor-video"></div>		</div>
+				</div>
+				</div>
+						</div>
+					</div>
+		</div>
+								</div>
+					</div>
+		</section>
+				<section class="elementor-section elementor-top-section elementor-element elementor-element-1e6cae3 elementor-section-full_width elementor-section-height-default elementor-section-height-default" data-id="1e6cae3" data-element_type="section">
+						<div class="elementor-container elementor-column-gap-default">
+							<div class="elementor-row">
+					<div class="elementor-column elementor-col-100 elementor-top-column elementor-element elementor-element-9c45586" data-id="9c45586" data-element_type="column">
+			<div class="elementor-column-wrap elementor-element-populated">
+							<div class="elementor-widget-wrap">
+						<div class="elementor-element elementor-element-26aaa5b3 elementor-widget-divider--view-line elementor-widget elementor-widget-divider" data-id="26aaa5b3" data-element_type="widget" data-widget_type="divider.default">
+				<div class="elementor-widget-container">
+					<div class="elementor-divider">
+			<span class="elementor-divider-separator">
+						</span>
+		</div>
+				</div>
+				</div>
+				<div class="elementor-element elementor-element-8293ae0 elementor-widget elementor-widget-text-editor" data-id="8293ae0" data-element_type="widget" data-widget_type="text-editor.default">
+				<div class="elementor-widget-container">
+					<div class="elementor-text-editor elementor-clearfix"><h2><strong style="font-size: 20px;">SERVIÇO DE DEDETIZAÇÃO EM SP</strong></h2><p>Nossa equipe é capacitada para oferecer um rápido e eficiente serviço de <strong>dedetização em SP.</strong></p><p>Todos os Nossos Serviços acompanham <strong>laudo e certificado com garantia de assistência</strong>.</p><p>A <strong>Offpragas</strong> possui o <strong>alvará de funcionamento</strong> fornecido pela vigilância sanitária, o que garante segurança e eficiência para todos os clientes.</p><p>Temos equipes espalhadas em diversas <strong>regiões de São Paulo</strong>, todas prontas para atender e oferecer os melhores <strong>serviços de dedetização em SP</strong>.</p><p>Se precisar e uma Dedetizadora em São Paulo, não hesite em contatar a <strong>Offpragas</strong> e tenha garantia que só uma empresa de qualidade pode oferecer.</p><p>Atendemos dedetização em condomínios, edifícios, indústrias, comércio, creches, hospitais, escolas, parques públicos e diversos outros segmentos, consulte.</p><p><em>Para agendar atendimento para dedetizadora em São Paulo, ligue para (11) 3368-7880 e Solicite seu orçamento ou vistoria sem custo.</em></p></div>
+				</div>
+				</div>
+						</div>
+					</div>
+		</div>
+								</div>
+					</div>
+		</section>
+				<section class="elementor-section elementor-top-section elementor-element elementor-element-2ff34ce9 elementor-section-full_width elementor-section-height-default elementor-section-height-default" data-id="2ff34ce9" data-element_type="section">
+						<div class="elementor-container elementor-column-gap-default">
+							<div class="elementor-row">
+					<div class="elementor-column elementor-col-100 elementor-top-column elementor-element elementor-element-523fdabb" data-id="523fdabb" data-element_type="column">
+			<div class="elementor-column-wrap elementor-element-populated">
+							<div class="elementor-widget-wrap">
+						<div class="elementor-element elementor-element-233c6642 elementor-widget elementor-widget-heading" data-id="233c6642" data-element_type="widget" data-widget_type="heading.default">
+				<div class="elementor-widget-container">
+			<h2 class="elementor-heading-title elementor-size-default">Empresa Licenciada pelos Órgãos Responsáveis</h2>		</div>
+				</div>
+						</div>
+					</div>
+		</div>
+								</div>
+					</div>
+		</section>
+				<section class="elementor-section elementor-top-section elementor-element elementor-element-71413978 elementor-section-boxed elementor-section-height-default elementor-section-height-default" data-id="71413978" data-element_type="section">
+						<div class="elementor-container elementor-column-gap-default">
+							<div class="elementor-row">
+					<div class="elementor-column elementor-col-25 elementor-top-column elementor-element elementor-element-10700c3" data-id="10700c3" data-element_type="column">
+			<div class="elementor-column-wrap elementor-element-populated">
+							<div class="elementor-widget-wrap">
+						<div class="elementor-element elementor-element-597b5ad6 elementor-widget elementor-widget-image" data-id="597b5ad6" data-element_type="widget" data-widget_type="image.default">
+				<div class="elementor-widget-container">
+					<div class="elementor-image">
+										<img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAEsAAABLAQAAAAAQNUdHAAAAAnRSTlMAAHaTzTgAAAAQSURBVCjPY2AYBaNgFJAMAAM5AAELGjlgAAAAAElFTkSuQmCC" title="cropped-icone-cetesb-site-1-1" alt="cetesb" data-src="https://offpragasdedetizacao.com.br/wp-content/uploads/elementor/thumbs/cropped-icone-cetesb-site-1-1-ppq6dj6nxlakqs0kghq65bhnn7at3p90q58mhqksku.png" decoding="async" class="lazyload" /><noscript><img src="https://offpragasdedetizacao.com.br/wp-content/uploads/elementor/thumbs/cropped-icone-cetesb-site-1-1-ppq6dj6nxlakqs0kghq65bhnn7at3p90q58mhqksku.png" title="cropped-icone-cetesb-site-1-1" alt="cetesb" data-eio="l" /></noscript>											</div>
+				</div>
+				</div>
+						</div>
+					</div>
+		</div>
+				<div class="elementor-column elementor-col-25 elementor-top-column elementor-element elementor-element-4ff0632f" data-id="4ff0632f" data-element_type="column">
+			<div class="elementor-column-wrap elementor-element-populated">
+							<div class="elementor-widget-wrap">
+						<div class="elementor-element elementor-element-4435cfbf elementor-widget elementor-widget-image" data-id="4435cfbf" data-element_type="widget" data-widget_type="image.default">
+				<div class="elementor-widget-container">
+					<div class="elementor-image">
+										<img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAEsAAABLAQAAAAAQNUdHAAAAAnRSTlMAAHaTzTgAAAAQSURBVCjPY2AYBaNgFJAMAAM5AAELGjlgAAAAAElFTkSuQmCC" title="anvisa" alt="anvisa" data-src="https://offpragasdedetizacao.com.br/wp-content/uploads/elementor/thumbs/anvisa-ppq6nffhvsu8yzn3o9prwblcs8ix4zjaf4hndlwl2m.png" decoding="async" class="lazyload" /><noscript><img src="https://offpragasdedetizacao.com.br/wp-content/uploads/elementor/thumbs/anvisa-ppq6nffhvsu8yzn3o9prwblcs8ix4zjaf4hndlwl2m.png" title="anvisa" alt="anvisa" data-eio="l" /></noscript>											</div>
+				</div>
+				</div>
+						</div>
+					</div>
+		</div>
+				<div class="elementor-column elementor-col-25 elementor-top-column elementor-element elementor-element-5e7b8fc4" data-id="5e7b8fc4" data-element_type="column">
+			<div class="elementor-column-wrap elementor-element-populated">
+							<div class="elementor-widget-wrap">
+						<div class="elementor-element elementor-element-7148d5b8 elementor-widget elementor-widget-image" data-id="7148d5b8" data-element_type="widget" data-widget_type="image.default">
+				<div class="elementor-widget-container">
+					<div class="elementor-image">
+										<img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAEsAAABLAQAAAAAQNUdHAAAAAnRSTlMAAHaTzTgAAAAQSURBVCjPY2AYBaNgFJAMAAM5AAELGjlgAAAAAElFTkSuQmCC" title="aprag" alt="aprag" data-src="https://offpragasdedetizacao.com.br/wp-content/uploads/elementor/thumbs/aprag-nymizv9hdyap0m18fvb8eikqbmsmedea1mnq5w814e.jpg" decoding="async" class="lazyload" /><noscript><img src="https://offpragasdedetizacao.com.br/wp-content/uploads/elementor/thumbs/aprag-nymizv9hdyap0m18fvb8eikqbmsmedea1mnq5w814e.jpg" title="aprag" alt="aprag" data-eio="l" /></noscript>											</div>
+				</div>
+				</div>
+						</div>
+					</div>
+		</div>
+				<div class="elementor-column elementor-col-25 elementor-top-column elementor-element elementor-element-79a860b3" data-id="79a860b3" data-element_type="column">
+			<div class="elementor-column-wrap elementor-element-populated">
+							<div class="elementor-widget-wrap">
+						<div class="elementor-element elementor-element-790b8005 elementor-widget elementor-widget-image" data-id="790b8005" data-element_type="widget" data-widget_type="image.default">
+				<div class="elementor-widget-container">
+					<div class="elementor-image">
+										<img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAFoAAABkAQAAAAAuoxpyAAAAAnRSTlMAAHaTzTgAAAATSURBVDjLY2AYBaNgFIyCUQADAAUUAAEhUFEtAAAAAElFTkSuQmCC" title="crf" alt="crf" data-src="https://offpragasdedetizacao.com.br/wp-content/uploads/elementor/thumbs/crf-nymiz4062c2wga3bghiz2bv4ag054i2jezz7ddkj1k.png" decoding="async" class="lazyload" /><noscript><img src="https://offpragasdedetizacao.com.br/wp-content/uploads/elementor/thumbs/crf-nymiz4062c2wga3bghiz2bv4ag054i2jezz7ddkj1k.png" title="crf" alt="crf" data-eio="l" /></noscript>											</div>
+				</div>
+				</div>
+						</div>
+					</div>
+		</div>
+								</div>
+					</div>
+		</section>
+				<section class="elementor-section elementor-top-section elementor-element elementor-element-c45736c elementor-section-full_width elementor-section-height-default elementor-section-height-default" data-id="c45736c" data-element_type="section">
+						<div class="elementor-container elementor-column-gap-default">
+							<div class="elementor-row">
+					<div class="elementor-column elementor-col-100 elementor-top-column elementor-element elementor-element-8670782" data-id="8670782" data-element_type="column">
+			<div class="elementor-column-wrap elementor-element-populated">
+							<div class="elementor-widget-wrap">
+						<div class="elementor-element elementor-element-29b1acd elementor-widget elementor-widget-heading" data-id="29b1acd" data-element_type="widget" data-widget_type="heading.default">
+				<div class="elementor-widget-container">
+			<h2 class="elementor-heading-title elementor-size-default">Por que escolher uma Dedetizadora Licenciada?</h2>		</div>
+				</div>
+						</div>
+					</div>
+		</div>
+								</div>
+					</div>
+		</section>
+				<section class="elementor-section elementor-top-section elementor-element elementor-element-439189d elementor-section-full_width elementor-section-height-default elementor-section-height-default" data-id="439189d" data-element_type="section">
+						<div class="elementor-container elementor-column-gap-default">
+							<div class="elementor-row">
+					<div class="elementor-column elementor-col-100 elementor-top-column elementor-element elementor-element-fae4c9f" data-id="fae4c9f" data-element_type="column">
+			<div class="elementor-column-wrap elementor-element-populated">
+							<div class="elementor-widget-wrap">
+						<div class="elementor-element elementor-element-ee01b0a elementor-widget elementor-widget-text-editor" data-id="ee01b0a" data-element_type="widget" data-widget_type="text-editor.default">
+				<div class="elementor-widget-container">
+					<div class="elementor-text-editor elementor-clearfix"><h1><span style="font-size: 24px; color: rgba(5, 4, 2, 0.73);">Somente contratando uma </span><strong style="font-size: 24px; color: rgba(5, 4, 2, 0.73);">Dedetizadora Licenciada</strong><span style="font-size: 24px; color: rgba(5, 4, 2, 0.73);">, você tem a </span><strong style="font-size: 24px; color: rgba(5, 4, 2, 0.73);">Garantia de qualidade e responsabilidade</strong><span style="font-size: 24px; color: rgba(5, 4, 2, 0.73);"> que é necessária para realizar um serviço de dedetização.</span></h1>
+<p>Somente utilizamos produtos certificados pelo <strong>Ministério da Saúde</strong> e com <strong>dosagens corretas</strong> e escolhemos sempre o melhor veneno para cada praga e ambiente específico que será dedetizado.</p>
+<p>Nossos serviços de controle de pragas, acompanha <strong>certificado e garantia de assistência</strong>, ou seja, se tiver necessidade, reaplicaremos e refazemos a dedetização sem custo algum.</p>
+<p>Nossa <strong>empresa Dedetizadora</strong>, zela pela solução do seu problema. Oferecemos uma Dedetização com Preço e Condições Acessíveis.</p>
+<h2><strong>Regiões Atendidas pela Offpragas Dedetizadora SP</strong></h2>
+<p>Para facilitar e agilizar todos os atendimentos, espalhamos base em toda a <strong>grande São Paulo e Guarulhos</strong>. Todos os bairros da zona leste, zona oeste, zona norte e zona sul.</p>
+<p>Isso nos permite realizar um rápido atendimento e oferecer preços acessíveis com muita qualidade e responsabilidade.</p>
+<h2><strong>Diferenciais da nossa Empresa Dedetizadora para Prestação de Serviço de Dedetização</strong></h2>
+<p>A <strong>Offpragas</strong> tem métodos exclusivos para aumentar a eficácia da desinsetização. Utilizamos <strong>técnicas desenvolvidas ou aperfeiçoadas por nós</strong>.</p>
+<p>Utilizamos diversos equipamentos, como máquinas de vapor, aspiradores, extratoras, máquinas nebulizadoras, atomizadores, pulverizadores adaptados e pistolas elétricas.</p>
+<p>Temos técnicas que não <strong>necessitam esvaziar o ambiente</strong> e não causam transtorno para sua casa ou empresa.</p>
+<p>Utilizamos os mais modernos produtos, todos <strong>sem cheiro</strong> e <strong>bem específico para a praga alvo</strong>. Optamos sempre por utilizar inseticidas de marcas renomadas, para ter certeza de uma <strong>dedetização perfeita</strong>.</p>
+<p>Antes da realização dos serviços, enviamos os <strong>dados e ficha cadastral dos técnicos</strong> que irão lhe atender, com isso você tem maior segurança e controle de quem irá na sua casa ou empresa.</p></div>
+				</div>
+				</div>
+						</div>
+					</div>
+		</div>
+								</div>
+					</div>
+		</section>
+				<section class="elementor-section elementor-top-section elementor-element elementor-element-6d1cdea elementor-section-full_width elementor-section-height-default elementor-section-height-default" data-id="6d1cdea" data-element_type="section">
+						<div class="elementor-container elementor-column-gap-default">
+							<div class="elementor-row">
+					<div class="elementor-column elementor-col-100 elementor-top-column elementor-element elementor-element-204de20" data-id="204de20" data-element_type="column">
+			<div class="elementor-column-wrap elementor-element-populated">
+							<div class="elementor-widget-wrap">
+						<div class="elementor-element elementor-element-54dfe15 elementor-widget elementor-widget-image" data-id="54dfe15" data-element_type="widget" data-widget_type="image.default">
+				<div class="elementor-widget-container">
+					<div class="elementor-image">
+										<picture><source  sizes='(max-width: 768px) 100vw, 768px' type='image/webp' data-srcset="https://offpragasdedetizacao.com.br/wp-content/uploads/2020/07/residential-cockroach-pest-control-768x513.jpg.webp 768w, https://offpragasdedetizacao.com.br/wp-content/uploads/2020/07/residential-cockroach-pest-control-300x200.jpg.webp 300w, https://offpragasdedetizacao.com.br/wp-content/uploads/2020/07/residential-cockroach-pest-control.jpg.webp 1000w"><img width="768" height="513" src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAwAAAAIBAQAAAADW0eUyAAAAAnRSTlMAAHaTzTgAAABHSURBVHja7cEBDQAAAMKg909tDwcUAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAADAuQHCYQABm5lhPgAAAABJRU5ErkJggg==" class="attachment-medium_large size-medium_large lazyload" alt="Dedetizadora SP"   data-eio="p" data-src="https://offpragasdedetizacao.com.br/wp-content/uploads/2020/07/residential-cockroach-pest-control-768x513.jpg" decoding="async" data-srcset="https://offpragasdedetizacao.com.br/wp-content/uploads/2020/07/residential-cockroach-pest-control-768x513.jpg 768w, https://offpragasdedetizacao.com.br/wp-content/uploads/2020/07/residential-cockroach-pest-control-300x200.jpg 300w, https://offpragasdedetizacao.com.br/wp-content/uploads/2020/07/residential-cockroach-pest-control.jpg 1000w" data-sizes="auto" /><noscript><img width="768" height="513" src="https://offpragasdedetizacao.com.br/wp-content/uploads/2020/07/residential-cockroach-pest-control-768x513.jpg" class="attachment-medium_large size-medium_large" alt="Dedetizadora SP" srcset="https://offpragasdedetizacao.com.br/wp-content/uploads/2020/07/residential-cockroach-pest-control-768x513.jpg 768w, https://offpragasdedetizacao.com.br/wp-content/uploads/2020/07/residential-cockroach-pest-control-300x200.jpg 300w, https://offpragasdedetizacao.com.br/wp-content/uploads/2020/07/residential-cockroach-pest-control.jpg 1000w" sizes="(max-width: 768px) 100vw, 768px" data-eio="l" /></noscript></picture>											</div>
+				</div>
+				</div>
+				<div class="elementor-element elementor-element-42a86e1 elementor-widget elementor-widget-heading" data-id="42a86e1" data-element_type="widget" data-widget_type="heading.default">
+				<div class="elementor-widget-container">
+			<h3 class="elementor-heading-title elementor-size-default">Desinsetização a seco</h3>		</div>
+				</div>
+						</div>
+					</div>
+		</div>
+								</div>
+					</div>
+		</section>
+				<section class="elementor-section elementor-top-section elementor-element elementor-element-ae49d39 elementor-section-full_width elementor-section-height-default elementor-section-height-default" data-id="ae49d39" data-element_type="section">
+						<div class="elementor-container elementor-column-gap-default">
+							<div class="elementor-row">
+					<div class="elementor-column elementor-col-100 elementor-top-column elementor-element elementor-element-b6efbf3" data-id="b6efbf3" data-element_type="column">
+			<div class="elementor-column-wrap elementor-element-populated">
+							<div class="elementor-widget-wrap">
+						<div class="elementor-element elementor-element-71bca4d elementor-widget elementor-widget-text-editor" data-id="71bca4d" data-element_type="widget" data-widget_type="text-editor.default">
+				<div class="elementor-widget-container">
+					<div class="elementor-text-editor elementor-clearfix"><h1><span style="font-size: 24px; color: rgba(5, 4, 2, 0.73);">Utilizamos essa moderna técnica para </span><strong style="font-size: 24px; color: rgba(5, 4, 2, 0.73);">dedetização de baratas, moscas e formigas.</strong></h1><p>A Dedetização a seco, utiliza um moderno e eficiente inseticida, que tem um atrativo alimentar e sexual, <strong>atraindo a praga alvo</strong> (barata, formigas e moscas), que se contaminam e voltam para sua colônia.</p><p>Esse inseticida tem <strong>um efeito dominó</strong>, ou seja, após a praga ser contaminada, ela contamina todas as outras, inclusive a <strong>rainha</strong> no caso das formigas.</p><p>Na <strong>desinsetização a seco</strong>, realizamos aplicações em “spot”, ou seja, pequenas pulverizações próximas e uma das outras e nos locais propícios para o desenvolvimento das pragas.</p><p>Essa técnica pode ser usada em <strong>ambientes sensíveis</strong>, com o mínimo de transtorno e o máximo de eficiência.</p><h2><strong>Dedetização de Ambientes Sensíveis</strong></h2><p>A <strong>Offpragas</strong> tem ampla experiência no <strong>controle de praga e vetores</strong> em ambientes sensíveis como casas de idosos, casas de pessoas alérgicas, hospitais, escolas, creches, canil entre outros.</p><p>Nossa equipe é formada por <strong>biólogos, farmacêuticos e técnicos bastantes experientes</strong>, que avaliam cada ambiente e situação, escolhendo a melhor técnica e produto.</p><p>Isso Garante um controle eficaz e minimiza os riscos da dedetização. Lembrando que devemos sempre <strong>respeitar as orientações do técnico responsável</strong>, para garantir a eficácia e segurança de todos.</p></div>
+				</div>
+				</div>
+						</div>
+					</div>
+		</div>
+								</div>
+					</div>
+		</section>
+				<section class="elementor-section elementor-top-section elementor-element elementor-element-2f821b00 elementor-section-content-middle elementor-section-stretched elementor-section-boxed elementor-section-height-default elementor-section-height-default" data-id="2f821b00" data-element_type="section" data-settings="{&quot;stretch_section&quot;:&quot;section-stretched&quot;,&quot;background_background&quot;:&quot;classic&quot;}">
+						<div class="elementor-container elementor-column-gap-no">
+							<div class="elementor-row">
+					<div class="elementor-column elementor-col-100 elementor-top-column elementor-element elementor-element-7276cefb" data-id="7276cefb" data-element_type="column">
+			<div class="elementor-column-wrap elementor-element-populated">
+							<div class="elementor-widget-wrap">
+						<div class="elementor-element elementor-element-1a552210 elementor-widget elementor-widget-heading" data-id="1a552210" data-element_type="widget" data-widget_type="heading.default">
+				<div class="elementor-widget-container">
+			<h2 class="elementor-heading-title elementor-size-default">Solicite seu Orçamento de Dedetização SP</h2>		</div>
+				</div>
+						</div>
+					</div>
+		</div>
+								</div>
+					</div>
+		</section>
+				<section class="elementor-section elementor-top-section elementor-element elementor-element-5b019d66 elementor-section-boxed elementor-section-height-default elementor-section-height-default" data-id="5b019d66" data-element_type="section">
+						<div class="elementor-container elementor-column-gap-default">
+							<div class="elementor-row">
+					<div class="elementor-column elementor-col-33 elementor-top-column elementor-element elementor-element-6bae6b35" data-id="6bae6b35" data-element_type="column">
+			<div class="elementor-column-wrap elementor-element-populated">
+							<div class="elementor-widget-wrap">
+						<div class="elementor-element elementor-element-281b27f elementor-widget elementor-widget-shortcode" data-id="281b27f" data-element_type="widget" data-widget_type="shortcode.default">
+				<div class="elementor-widget-container">
+					<div class="elementor-shortcode"><div role="form" class="wpcf7" id="wpcf7-f9926-p9625-o1" lang="pt-BR" dir="ltr">
+<div class="screen-reader-response"><p role="status" aria-live="polite" aria-atomic="true"></p> <ul></ul></div>
+<form action="/#wpcf7-f9926-p9625-o1" method="post" class="wpcf7-form init" novalidate="novalidate" data-status="init">
+<div style="display: none;">
+<input type="hidden" name="_wpcf7" value="9926" />
+<input type="hidden" name="_wpcf7_version" value="5.4" />
+<input type="hidden" name="_wpcf7_locale" value="pt_BR" />
+<input type="hidden" name="_wpcf7_unit_tag" value="wpcf7-f9926-p9625-o1" />
+<input type="hidden" name="_wpcf7_container_post" value="9625" />
+<input type="hidden" name="_wpcf7_posted_data_hash" value="" />
+</div>
+<p><label> Nome<br />
+    <span class="wpcf7-form-control-wrap your-name"><input type="text" name="your-name" value="" size="40" class="wpcf7-form-control wpcf7-text wpcf7-validates-as-required" aria-required="true" aria-invalid="false" /></span> </label></p>
+<p><label> Telefone<br />
+    <span class="wpcf7-form-control-wrap tel-829"><input type="tel" name="tel-829" value="" size="40" class="wpcf7-form-control wpcf7-text wpcf7-tel wpcf7-validates-as-tel" aria-invalid="false" /></span> </label></p>
+<p><label> E-mail<br />
+    <span class="wpcf7-form-control-wrap your-email"><input type="email" name="your-email" value="" size="40" class="wpcf7-form-control wpcf7-text wpcf7-email wpcf7-validates-as-required wpcf7-validates-as-email" aria-required="true" aria-invalid="false" /></span> </label></p>
+<p><label> Assunto<br />
+    <span class="wpcf7-form-control-wrap your-subject"><input type="text" name="your-subject" value="" size="40" class="wpcf7-form-control wpcf7-text wpcf7-validates-as-required" aria-required="true" aria-invalid="false" /></span> </label></p>
+<p><label> Sua Mensagem<br />
+    <span class="wpcf7-form-control-wrap your-message"><textarea name="your-message" cols="40" rows="10" class="wpcf7-form-control wpcf7-textarea" aria-invalid="false"></textarea></span> </label></p>
+<p><input type="submit" value="Enviar" class="wpcf7-form-control wpcf7-submit" /></p>
+<div class="wpcf7-response-output" aria-hidden="true"></div></form></div></div>
+				</div>
+				</div>
+						</div>
+					</div>
+		</div>
+				<div class="elementor-column elementor-col-33 elementor-top-column elementor-element elementor-element-53f974dd" data-id="53f974dd" data-element_type="column">
+			<div class="elementor-column-wrap elementor-element-populated">
+							<div class="elementor-widget-wrap">
+						<section class="elementor-section elementor-inner-section elementor-element elementor-element-137d1fa2 elementor-section-content-middle elementor-section-boxed elementor-section-height-default elementor-section-height-default" data-id="137d1fa2" data-element_type="section" data-settings="{&quot;background_background&quot;:&quot;gradient&quot;}">
+						<div class="elementor-container elementor-column-gap-no">
+							<div class="elementor-row">
+					<div class="elementor-column elementor-col-100 elementor-inner-column elementor-element elementor-element-9f23da9" data-id="9f23da9" data-element_type="column" data-settings="{&quot;background_background&quot;:&quot;classic&quot;}">
+			<div class="elementor-column-wrap elementor-element-populated">
+							<div class="elementor-widget-wrap">
+						<div class="elementor-element elementor-element-7adeb724 elementor-view-default elementor-position-top elementor-vertical-align-top elementor-widget elementor-widget-icon-box" data-id="7adeb724" data-element_type="widget" data-widget_type="icon-box.default">
+				<div class="elementor-widget-container">
+					<div class="elementor-icon-box-wrapper">
+						<div class="elementor-icon-box-icon">
+				<a class="elementor-icon elementor-animation-" href="https://wa.me/5511962138973">
+				<i aria-hidden="true" class="fas fa-mobile-alt"></i>				</a>
+			</div>
+						<div class="elementor-icon-box-content">
+				<h3 class="elementor-icon-box-title">
+					<a href="https://wa.me/5511962138973">11 96213-8973</a>
+				</h3>
+							</div>
+		</div>
+				</div>
+				</div>
+				<div class="elementor-element elementor-element-2cbbd92c elementor-widget elementor-widget-text-editor" data-id="2cbbd92c" data-element_type="widget" data-widget_type="text-editor.default">
+				<div class="elementor-widget-container">
+					<div class="elementor-text-editor elementor-clearfix"><p><strong>Endereço </strong></p><p>Rua Alves de Almeida, 991</p><p>Chácara Belenzinho, SP/SP</p></div>
+				</div>
+				</div>
+						</div>
+					</div>
+		</div>
+								</div>
+					</div>
+		</section>
+						</div>
+					</div>
+		</div>
+				<div class="elementor-column elementor-col-33 elementor-top-column elementor-element elementor-element-2b670265" data-id="2b670265" data-element_type="column">
+			<div class="elementor-column-wrap elementor-element-populated">
+							<div class="elementor-widget-wrap">
+						<div class="elementor-element elementor-element-24b3c050 elementor-widget elementor-widget-image" data-id="24b3c050" data-element_type="widget" data-widget_type="image.default">
+				<div class="elementor-widget-container">
+					<div class="elementor-image">
+										<picture><source  sizes='(max-width: 491px) 100vw, 491px' type='image/webp' data-srcset="https://offpragasdedetizacao.com.br/wp-content/uploads/2019/02/dedeizador-2.png.webp 491w, https://offpragasdedetizacao.com.br/wp-content/uploads/2019/02/dedeizador-2-295x300.png.webp 295w"><img width="491" height="499" src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAesAAAHzAQAAAAAoDQj6AAAAAnRSTlMAAHaTzTgAAAA1SURBVHja7cEBDQAAAMKg909tDwcUAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAtwZ6zQABHETlEQAAAABJRU5ErkJggg==" class="attachment-large size-large lazyload" alt="dedetizador da off pragas"   data-eio="p" data-src="https://offpragasdedetizacao.com.br/wp-content/uploads/2019/02/dedeizador-2.png" decoding="async" data-srcset="https://offpragasdedetizacao.com.br/wp-content/uploads/2019/02/dedeizador-2.png 491w, https://offpragasdedetizacao.com.br/wp-content/uploads/2019/02/dedeizador-2-295x300.png 295w" data-sizes="auto" /><noscript><img width="491" height="499" src="https://offpragasdedetizacao.com.br/wp-content/uploads/2019/02/dedeizador-2.png" class="attachment-large size-large" alt="dedetizador da off pragas" srcset="https://offpragasdedetizacao.com.br/wp-content/uploads/2019/02/dedeizador-2.png 491w, https://offpragasdedetizacao.com.br/wp-content/uploads/2019/02/dedeizador-2-295x300.png 295w" sizes="(max-width: 491px) 100vw, 491px" data-eio="l" /></noscript></picture>											</div>
+				</div>
+				</div>
+						</div>
+					</div>
+		</div>
+								</div>
+					</div>
+		</section>
+				<section class="elementor-section elementor-top-section elementor-element elementor-element-eb367cc elementor-section-full_width elementor-section-height-default elementor-section-height-default" data-id="eb367cc" data-element_type="section">
+						<div class="elementor-container elementor-column-gap-default">
+							<div class="elementor-row">
+					<div class="elementor-column elementor-col-100 elementor-top-column elementor-element elementor-element-82543e1" data-id="82543e1" data-element_type="column">
+			<div class="elementor-column-wrap elementor-element-populated">
+							<div class="elementor-widget-wrap">
+						<div class="elementor-element elementor-element-6f45455 elementor-widget-divider--view-line elementor-widget elementor-widget-divider" data-id="6f45455" data-element_type="widget" data-widget_type="divider.default">
+				<div class="elementor-widget-container">
+					<div class="elementor-divider">
+			<span class="elementor-divider-separator">
+						</span>
+		</div>
+				</div>
+				</div>
+				<div class="elementor-element elementor-element-abd28df elementor-widget elementor-widget-heading" data-id="abd28df" data-element_type="widget" data-widget_type="heading.default">
+				<div class="elementor-widget-container">
+			<h2 class="elementor-heading-title elementor-size-default">Outros Serviços</h2>		</div>
+				</div>
+						</div>
+					</div>
+		</div>
+								</div>
+					</div>
+		</section>
+				<section class="elementor-section elementor-top-section elementor-element elementor-element-aba8ed8 elementor-section-full_width elementor-section-height-default elementor-section-height-default" data-id="aba8ed8" data-element_type="section" data-settings="{&quot;background_background&quot;:&quot;classic&quot;}">
+							<div class="elementor-background-overlay"></div>
+							<div class="elementor-container elementor-column-gap-default">
+							<div class="elementor-row">
+					<div class="elementor-column elementor-col-100 elementor-top-column elementor-element elementor-element-dfe42be" data-id="dfe42be" data-element_type="column">
+			<div class="elementor-column-wrap elementor-element-populated">
+							<div class="elementor-widget-wrap">
+						<div class="elementor-element elementor-element-63a8f50 elementor-widget elementor-widget-shortcode" data-id="63a8f50" data-element_type="widget" data-widget_type="shortcode.default">
+				<div class="elementor-widget-container">
+					<div class="elementor-shortcode"><div class='mejorcluster mejorcluster-grid-3 mejorcluster-shadow mejorcluster-round mejorcluster-display-image'><article class='mejorcluster-item'><header class='mejorcluster-item-header'><a href='https://offpragasdedetizacao.com.br/limpeza-de-caixa-d-agua/' rel='bookmark' class='mejorcluster-image-link'><figure class='mejorcluster-figure'><picture><source   type='image/webp' data-srcset="https://offpragasdedetizacao.com.br/wp-content/uploads/2018/09/caixa_d_agua_1000_litros-300x300.png.webp"><img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAASwAAAEsAQAAAABRBrPYAAAAAnRSTlMAAHaTzTgAAAAiSURBVGje7cExAQAAAMKg9U9tCj+gAAAAAAAAAAAAAAB4GS20AAH/6QlrAAAAAElFTkSuQmCC" class="mejorcluster-image lazyload" alt='Limpeza de Caixa d&#8217; Água​' data-eio="p" data-src="https://offpragasdedetizacao.com.br/wp-content/uploads/2018/09/caixa_d_agua_1000_litros-300x300.png" decoding="async" /><noscript><img src='https://offpragasdedetizacao.com.br/wp-content/uploads/2018/09/caixa_d_agua_1000_litros-300x300.png' class='mejorcluster-image' alt='Limpeza de Caixa d&#8217; Água​' data-eio="l" /></noscript></picture></figure></a></header><div class="mejorcluster-item-text"><h3 class='mejorcluster-title'>Limpeza de Caixa d&#8217; Água​</h3><p class='mejorcluster-desc'>Limpeza de Caixa d&#039; Água A Offpragas Dedetizadora, é uma empresa&hellip;</p></div></article><article class='mejorcluster-item'><header class='mejorcluster-item-header'><a href='https://offpragasdedetizacao.com.br/descupinizacao/' rel='bookmark' class='mejorcluster-image-link'><figure class='mejorcluster-figure'><picture><source   type='image/webp' data-srcset="https://offpragasdedetizacao.com.br/wp-content/uploads/2021/07/dedetizacao-de-cupim-300x300.jpg.webp"><img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAASwAAAEsAQAAAABRBrPYAAAAAnRSTlMAAHaTzTgAAAAiSURBVGje7cExAQAAAMKg9U9tCj+gAAAAAAAAAAAAAAB4GS20AAH/6QlrAAAAAElFTkSuQmCC" class="mejorcluster-image lazyload" alt='Descupinização' data-eio="p" data-src="https://offpragasdedetizacao.com.br/wp-content/uploads/2021/07/dedetizacao-de-cupim-300x300.jpg" decoding="async" /><noscript><img src='https://offpragasdedetizacao.com.br/wp-content/uploads/2021/07/dedetizacao-de-cupim-300x300.jpg' class='mejorcluster-image' alt='Descupinização' data-eio="l" /></noscript></picture></figure></a></header><div class="mejorcluster-item-text"><h3 class='mejorcluster-title'>Descupinização</h3><p class='mejorcluster-desc'>Descupinização Resolvemos seu Problema com Cupim Solicite Seu Orçamento Descupinização&hellip;</p></div></article><article class='mejorcluster-item'><header class='mejorcluster-item-header'><a href='https://offpragasdedetizacao.com.br/dedetizacao-de-tracas/' rel='bookmark' class='mejorcluster-image-link'><figure class='mejorcluster-figure'><picture><source   type='image/webp' data-srcset="https://offpragasdedetizacao.com.br/wp-content/uploads/2020/07/traça-2.jpg.webp"><img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAASwAAADqAQAAAAAwwEXFAAAAAnRSTlMAAHaTzTgAAAAgSURBVGje7cExAQAAAMKg9U9tCj+gAAAAAAAAAACArwEjpgABcbf3OwAAAABJRU5ErkJggg==" class="mejorcluster-image lazyload" alt='dedetização de traças' data-eio="p" data-src="https://offpragasdedetizacao.com.br/wp-content/uploads/2020/07/traça-2.jpg" decoding="async" /><noscript><img src='https://offpragasdedetizacao.com.br/wp-content/uploads/2020/07/traça-2.jpg' class='mejorcluster-image' alt='dedetização de traças' data-eio="l" /></noscript></picture></figure></a></header><div class="mejorcluster-item-text"><h3 class='mejorcluster-title'>dedetização de traças</h3><p class='mejorcluster-desc'>Dedetização de Traças Acabe com as traças e Outras Pragas&hellip;</p></div></article><article class='mejorcluster-item'><header class='mejorcluster-item-header'><a href='https://offpragasdedetizacao.com.br/dedetizacao-de-pulga/' rel='bookmark' class='mejorcluster-image-link'><figure class='mejorcluster-figure'><picture><source   type='image/webp' data-srcset="https://offpragasdedetizacao.com.br/wp-content/uploads/2020/07/pulga-2-300x200.jpg.webp"><img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAASwAAADIAQAAAAB6pOH4AAAAAnRSTlMAAHaTzTgAAAAeSURBVFjD7cExAQAAAMKg9U9tB2+gAAAAAAAAAOA3HngAARco3ZkAAAAASUVORK5CYII=" class="mejorcluster-image lazyload" alt='dedetização de pulga' data-eio="p" data-src="https://offpragasdedetizacao.com.br/wp-content/uploads/2020/07/pulga-2-300x200.jpg" decoding="async" /><noscript><img src='https://offpragasdedetizacao.com.br/wp-content/uploads/2020/07/pulga-2-300x200.jpg' class='mejorcluster-image' alt='dedetização de pulga' data-eio="l" /></noscript></picture></figure></a></header><div class="mejorcluster-item-text"><h3 class='mejorcluster-title'>dedetização de pulga</h3><p class='mejorcluster-desc'>Dedetização de Pulga Acabe com as Pulgas e Outras Pragas&hellip;</p></div></article><article class='mejorcluster-item'><header class='mejorcluster-item-header'><a href='https://offpragasdedetizacao.com.br/dedetizacao-de-percevejo/' rel='bookmark' class='mejorcluster-image-link'><figure class='mejorcluster-figure'><picture><source   type='image/webp' data-srcset="https://offpragasdedetizacao.com.br/wp-content/uploads/2020/07/bedbug-lo-300x247.jpg.webp"><img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAASwAAAD3AQAAAACPiFSAAAAAAnRSTlMAAHaTzTgAAAAgSURBVGje7cExAQAAAMKg9U9tCj+gAAAAAAAAAAAAuBgloQABqqaTQAAAAABJRU5ErkJggg==" class="mejorcluster-image lazyload" alt='dedetização de percevejo' data-eio="p" data-src="https://offpragasdedetizacao.com.br/wp-content/uploads/2020/07/bedbug-lo-300x247.jpg" decoding="async" /><noscript><img src='https://offpragasdedetizacao.com.br/wp-content/uploads/2020/07/bedbug-lo-300x247.jpg' class='mejorcluster-image' alt='dedetização de percevejo' data-eio="l" /></noscript></picture></figure></a></header><div class="mejorcluster-item-text"><h3 class='mejorcluster-title'>dedetização de percevejo</h3><p class='mejorcluster-desc'>Dedetização de Percevejo Acabe com os Percevejos Solicite Seu Orçamento&hellip;</p></div></article><article class='mejorcluster-item'><header class='mejorcluster-item-header'><a href='https://offpragasdedetizacao.com.br/dedetizacao-de-formigas/' rel='bookmark' class='mejorcluster-image-link'><figure class='mejorcluster-figure'><picture><source   type='image/webp' data-srcset="https://offpragasdedetizacao.com.br/wp-content/uploads/2020/04/formigas-2.jpg.webp"><img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAASIAAACuAQAAAAC6wD0MAAAAAnRSTlMAAHaTzTgAAAAdSURBVFjD7cExAQAAAMKg9U9tDQ+gAAAAAAAAeDcZ1AAB60t8kAAAAABJRU5ErkJggg==" class="mejorcluster-image lazyload" alt='dedetização de formigas' data-eio="p" data-src="https://offpragasdedetizacao.com.br/wp-content/uploads/2020/04/formigas-2.jpg" decoding="async" /><noscript><img src='https://offpragasdedetizacao.com.br/wp-content/uploads/2020/04/formigas-2.jpg' class='mejorcluster-image' alt='dedetização de formigas' data-eio="l" /></noscript></picture></figure></a></header><div class="mejorcluster-item-text"><h3 class='mejorcluster-title'>dedetização de formigas</h3><p class='mejorcluster-desc'>Dedetização de Formigas Acabe com as Formigas e Outras Pragas&hellip;</p></div></article><article class='mejorcluster-item'><header class='mejorcluster-item-header'><a href='https://offpragasdedetizacao.com.br/dedetizacao-de-carrapatos/' rel='bookmark' class='mejorcluster-image-link'><figure class='mejorcluster-figure'><picture><source   type='image/webp' data-srcset="https://offpragasdedetizacao.com.br/wp-content/uploads/2020/07/carrapato-1-300x169.jpg.webp"><img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAASwAAACpAQAAAAC5DD0HAAAAAnRSTlMAAHaTzTgAAAAdSURBVFjD7cExAQAAAMKg9U9tDQ+gAAAAAAAAODIZvwABaHHdTQAAAABJRU5ErkJggg==" class="mejorcluster-image lazyload" alt='dedetização de carrapatos' data-eio="p" data-src="https://offpragasdedetizacao.com.br/wp-content/uploads/2020/07/carrapato-1-300x169.jpg" decoding="async" /><noscript><img src='https://offpragasdedetizacao.com.br/wp-content/uploads/2020/07/carrapato-1-300x169.jpg' class='mejorcluster-image' alt='dedetização de carrapatos' data-eio="l" /></noscript></picture></figure></a></header><div class="mejorcluster-item-text"><h3 class='mejorcluster-title'>dedetização de carrapatos</h3><p class='mejorcluster-desc'>Dedetização de Carrapatos Acabe com as Carrapatos e Outras Pragas&hellip;</p></div></article><article class='mejorcluster-item'><header class='mejorcluster-item-header'><a href='https://offpragasdedetizacao.com.br/dedetizacao-de-barata/' rel='bookmark' class='mejorcluster-image-link'><figure class='mejorcluster-figure'><picture><source   type='image/webp' data-srcset="https://offpragasdedetizacao.com.br/wp-content/uploads/2020/04/barata-300x264.jpg.webp"><img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAASwAAAEIAQAAAADNO/T4AAAAAnRSTlMAAHaTzTgAAAAgSURBVGje7cEBAQAAAIIg/69uSEABAAAAAAAAAAAALwYoOAABzCoyuwAAAABJRU5ErkJggg==" class="mejorcluster-image lazyload" alt='dedetização de barata' data-eio="p" data-src="https://offpragasdedetizacao.com.br/wp-content/uploads/2020/04/barata-300x264.jpg" decoding="async" /><noscript><img src='https://offpragasdedetizacao.com.br/wp-content/uploads/2020/04/barata-300x264.jpg' class='mejorcluster-image' alt='dedetização de barata' data-eio="l" /></noscript></picture></figure></a></header><div class="mejorcluster-item-text"><h3 class='mejorcluster-title'>dedetização de barata</h3><p class='mejorcluster-desc'>Dedetização de Barata Acabe com as Baratas e Outras Pragas&hellip;</p></div></article></div>
+</div>
+				</div>
+				</div>
+						</div>
+					</div>
+		</div>
+								</div>
+					</div>
+		</section>
+						</div>
+						</div>
+					</div>
+			</div> 
+</article>
+				
+			</div><!-- #content -->
+
+			
+		</div><!-- #primary -->
+
+		
+		
+	</div><!-- #content-wrap -->
+
+	
+
+        </main><!-- #main -->
+
+        
+        
+        
+            
+<footer id="footer" class="site-footer" itemscope="itemscope" itemtype="http://schema.org/WPFooter">
+
+    
+    <div id="footer-inner" class="clr">
+
+        
+
+<div id="footer-widgets" class="oceanwp-row clr">
+
+	
+	<div class="footer-widgets-inner container">
+
+        		<div data-elementor-type="wp-post" data-elementor-id="5786" class="elementor elementor-5786" data-elementor-settings="[]">
+						<div class="elementor-inner">
+							<div class="elementor-section-wrap">
+							<section class="elementor-section elementor-top-section elementor-element elementor-element-48711c89 elementor-section-height-min-height elementor-section-content-middle elementor-section-stretched elementor-section-items-top elementor-section-boxed elementor-section-height-default" data-id="48711c89" data-element_type="section" data-settings="{&quot;background_background&quot;:&quot;classic&quot;,&quot;stretch_section&quot;:&quot;section-stretched&quot;}">
+						<div class="elementor-container elementor-column-gap-wide">
+							<div class="elementor-row">
+					<div class="elementor-column elementor-col-25 elementor-top-column elementor-element elementor-element-279f89c4" data-id="279f89c4" data-element_type="column">
+			<div class="elementor-column-wrap elementor-element-populated">
+							<div class="elementor-widget-wrap">
+						<div class="elementor-element elementor-element-54422473 elementor-widget elementor-widget-image" data-id="54422473" data-element_type="widget" data-widget_type="image.default">
+				<div class="elementor-widget-container">
+					<div class="elementor-image">
+										<picture><source  sizes='(max-width: 498px) 100vw, 498px' type='image/webp' data-srcset="https://offpragasdedetizacao.com.br/wp-content/uploads/2018/10/logo-letra-branca.png.webp 498w, https://offpragasdedetizacao.com.br/wp-content/uploads/2018/10/logo-letra-branca-300x61.png.webp 300w"><img width="498" height="101" src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAfIAAABlAQAAAACe/lwyAAAAAnRSTlMAAHaTzTgAAAAdSURBVFjD7cExAQAAAMKg9U/tawigAAAAAAAAeAMZQAABHASk3wAAAABJRU5ErkJggg==" class="attachment-medium_large size-medium_large lazyload" alt="offpragas logo branco"   data-eio="p" data-src="https://offpragasdedetizacao.com.br/wp-content/uploads/2018/10/logo-letra-branca.png" decoding="async" data-srcset="https://offpragasdedetizacao.com.br/wp-content/uploads/2018/10/logo-letra-branca.png 498w, https://offpragasdedetizacao.com.br/wp-content/uploads/2018/10/logo-letra-branca-300x61.png 300w" data-sizes="auto" /><noscript><img width="498" height="101" src="https://offpragasdedetizacao.com.br/wp-content/uploads/2018/10/logo-letra-branca.png" class="attachment-medium_large size-medium_large" alt="offpragas logo branco" srcset="https://offpragasdedetizacao.com.br/wp-content/uploads/2018/10/logo-letra-branca.png 498w, https://offpragasdedetizacao.com.br/wp-content/uploads/2018/10/logo-letra-branca-300x61.png 300w" sizes="(max-width: 498px) 100vw, 498px" data-eio="l" /></noscript></picture>											</div>
+				</div>
+				</div>
+				<div class="elementor-element elementor-element-7c0abdb elementor-widget elementor-widget-heading" data-id="7c0abdb" data-element_type="widget" data-widget_type="heading.default">
+				<div class="elementor-widget-container">
+			<h4 class="elementor-heading-title elementor-size-default">Termos</h4>		</div>
+				</div>
+				<div class="elementor-element elementor-element-c674d87 elementor-icon-list--layout-traditional elementor-list-item-link-full_width elementor-widget elementor-widget-icon-list" data-id="c674d87" data-element_type="widget" data-widget_type="icon-list.default">
+				<div class="elementor-widget-container">
+					<ul class="elementor-icon-list-items">
+							<li class="elementor-icon-list-item">
+											<span class="elementor-icon-list-icon">
+							<i aria-hidden="true" class="fas fa-check"></i>						</span>
+										<span class="elementor-icon-list-text">Política de Privacidade</span>
+									</li>
+								<li class="elementor-icon-list-item">
+											<span class="elementor-icon-list-icon">
+							<i aria-hidden="true" class="fas fa-check"></i>						</span>
+										<span class="elementor-icon-list-text">Política de Cookies</span>
+									</li>
+								<li class="elementor-icon-list-item">
+					<a href="https://offpragasdedetizacao.com.br/page-sitemap.xml">						<span class="elementor-icon-list-icon">
+							<i aria-hidden="true" class="fas fa-check"></i>						</span>
+										<span class="elementor-icon-list-text">Sitemap</span>
+											</a>
+									</li>
+						</ul>
+				</div>
+				</div>
+				<div class="elementor-element elementor-element-aa465b4 elementor-shape-rounded elementor-grid-0 e-grid-align-center elementor-widget elementor-widget-social-icons" data-id="aa465b4" data-element_type="widget" data-widget_type="social-icons.default">
+				<div class="elementor-widget-container">
+					<div class="elementor-social-icons-wrapper elementor-grid">
+							<div class="elementor-grid-item">
+					<a class="elementor-icon elementor-social-icon elementor-social-icon-facebook elementor-repeater-item-fa0621e" href="https://www.facebook.com/offpragasdedetizadora/" target="_blank">
+						<span class="elementor-screen-only">Facebook</span>
+						<i class="fab fa-facebook"></i>					</a>
+				</div>
+							<div class="elementor-grid-item">
+					<a class="elementor-icon elementor-social-icon elementor-social-icon-twitter elementor-repeater-item-9a925f9" href="https://twitter.com/offpragas" target="_blank">
+						<span class="elementor-screen-only">Twitter</span>
+						<i class="fab fa-twitter"></i>					</a>
+				</div>
+							<div class="elementor-grid-item">
+					<a class="elementor-icon elementor-social-icon elementor-social-icon-instagram elementor-repeater-item-e2435b8" href="https://www.instagram.com/offpragasdedetizadora/" target="_blank">
+						<span class="elementor-screen-only">Instagram</span>
+						<i class="fab fa-instagram"></i>					</a>
+				</div>
+					</div>
+				</div>
+				</div>
+						</div>
+					</div>
+		</div>
+				<div class="elementor-column elementor-col-25 elementor-top-column elementor-element elementor-element-6bd7192b" data-id="6bd7192b" data-element_type="column">
+			<div class="elementor-column-wrap elementor-element-populated">
+							<div class="elementor-widget-wrap">
+						<div class="elementor-element elementor-element-48632e7d elementor-widget elementor-widget-heading" data-id="48632e7d" data-element_type="widget" data-widget_type="heading.default">
+				<div class="elementor-widget-container">
+			<h4 class="elementor-heading-title elementor-size-default">Contato</h4>		</div>
+				</div>
+				<div class="elementor-element elementor-element-6cb0a439 elementor-widget elementor-widget-heading" data-id="6cb0a439" data-element_type="widget" data-widget_type="heading.default">
+				<div class="elementor-widget-container">
+			<p class="elementor-heading-title elementor-size-default">Rua Alves de Almeida, 991 Fundos <br>Chácara Belenzinho São Paulo - SP<br>03378-010<br><b>Fililal 2</b><br><span style="font-family: Lato, sans-serif; font-size: 20px; font-style: normal; font-variant-ligatures: normal; font-variant-caps: normal; font-weight: 300;">Rua Lotus, 246</span><br>Vila divina Pastora - São Paulo - SP<br>03265-000<br><br>Whatsapp: 11 96213-8973<br>Telefone: 11 3368-7880</p>		</div>
+				</div>
+						</div>
+					</div>
+		</div>
+				<div class="elementor-column elementor-col-25 elementor-top-column elementor-element elementor-element-9c36c91" data-id="9c36c91" data-element_type="column">
+			<div class="elementor-column-wrap elementor-element-populated">
+							<div class="elementor-widget-wrap">
+						<div class="elementor-element elementor-element-36742a4 elementor-widget elementor-widget-heading" data-id="36742a4" data-element_type="widget" data-widget_type="heading.default">
+				<div class="elementor-widget-container">
+			<h4 class="elementor-heading-title elementor-size-default">Contato</h4>		</div>
+				</div>
+				<div class="elementor-element elementor-element-1f0c820 elementor-align-center elementor-widget elementor-widget-button" data-id="1f0c820" data-element_type="widget" data-widget_type="button.default">
+				<div class="elementor-widget-container">
+					<div class="elementor-button-wrapper">
+			<a href="https://offpragasdedetizacao.com.br/descupinizacao/" class="elementor-button-link elementor-button elementor-size-sm" role="button">
+						<span class="elementor-button-content-wrapper">
+						<span class="elementor-button-text">Descupinização</span>
+		</span>
+					</a>
+		</div>
+				</div>
+				</div>
+				<div class="elementor-element elementor-element-efbb369 elementor-align-center elementor-widget elementor-widget-button" data-id="efbb369" data-element_type="widget" data-widget_type="button.default">
+				<div class="elementor-widget-container">
+					<div class="elementor-button-wrapper">
+			<a href="https://offpragasdedetizacao.com.br/desratizacao/" class="elementor-button-link elementor-button elementor-size-sm" role="button">
+						<span class="elementor-button-content-wrapper">
+						<span class="elementor-button-text">Desratização</span>
+		</span>
+					</a>
+		</div>
+				</div>
+				</div>
+				<div class="elementor-element elementor-element-360a3c7 elementor-align-center elementor-widget elementor-widget-button" data-id="360a3c7" data-element_type="widget" data-widget_type="button.default">
+				<div class="elementor-widget-container">
+					<div class="elementor-button-wrapper">
+			<a href="https://offpragasdedetizacao.com.br/limpeza-de-caixa-d-agua/" class="elementor-button-link elementor-button elementor-size-sm" role="button">
+						<span class="elementor-button-content-wrapper">
+						<span class="elementor-button-text">Limpeza de Caixa d`Água</span>
+		</span>
+					</a>
+		</div>
+				</div>
+				</div>
+				<div class="elementor-element elementor-element-f16d78f elementor-align-center elementor-widget elementor-widget-button" data-id="f16d78f" data-element_type="widget" data-widget_type="button.default">
+				<div class="elementor-widget-container">
+					<div class="elementor-button-wrapper">
+			<a href="https://offpragasdedetizacao.com.br/dedetizacao-de-formigas/" class="elementor-button-link elementor-button elementor-size-sm" role="button">
+						<span class="elementor-button-content-wrapper">
+						<span class="elementor-button-text">DDT Formiga</span>
+		</span>
+					</a>
+		</div>
+				</div>
+				</div>
+				<div class="elementor-element elementor-element-ba9b2a4 elementor-align-center elementor-widget elementor-widget-button" data-id="ba9b2a4" data-element_type="widget" data-widget_type="button.default">
+				<div class="elementor-widget-container">
+					<div class="elementor-button-wrapper">
+			<a href="https://offpragasdedetizacao.com.br/dedetizacao-de-barata/" class="elementor-button-link elementor-button elementor-size-sm" role="button">
+						<span class="elementor-button-content-wrapper">
+						<span class="elementor-button-text">DDT Barata</span>
+		</span>
+					</a>
+		</div>
+				</div>
+				</div>
+				<div class="elementor-element elementor-element-5b58377 elementor-align-center elementor-widget elementor-widget-button" data-id="5b58377" data-element_type="widget" data-widget_type="button.default">
+				<div class="elementor-widget-container">
+					<div class="elementor-button-wrapper">
+			<a href="https://offpragasdedetizacao.com.br/dedetizacao-de-percevejo/" class="elementor-button-link elementor-button elementor-size-sm" role="button">
+						<span class="elementor-button-content-wrapper">
+						<span class="elementor-button-text">DDT Percevejo</span>
+		</span>
+					</a>
+		</div>
+				</div>
+				</div>
+				<div class="elementor-element elementor-element-e7c7230 elementor-align-center elementor-widget elementor-widget-button" data-id="e7c7230" data-element_type="widget" data-widget_type="button.default">
+				<div class="elementor-widget-container">
+					<div class="elementor-button-wrapper">
+			<a href="https://offpragasdedetizacao.com.br/dedetizacao-de-pulga/" class="elementor-button-link elementor-button elementor-size-sm" role="button">
+						<span class="elementor-button-content-wrapper">
+						<span class="elementor-button-text">DDT Pulga</span>
+		</span>
+					</a>
+		</div>
+				</div>
+				</div>
+						</div>
+					</div>
+		</div>
+				<div class="elementor-column elementor-col-25 elementor-top-column elementor-element elementor-element-61fcf442" data-id="61fcf442" data-element_type="column">
+			<div class="elementor-column-wrap elementor-element-populated">
+							<div class="elementor-widget-wrap">
+						<div class="elementor-element elementor-element-8d2a4fc elementor-widget elementor-widget-shortcode" data-id="8d2a4fc" data-element_type="widget" data-widget_type="shortcode.default">
+				<div class="elementor-widget-container">
+					<div class="elementor-shortcode"><iframe  width="640" height="480" data-src="https://www.google.com/maps/d/embed?mid=1i0IpGDlGx5l5dwBriiKjbpBQdf1xa7zh" class="lazyload"></iframe></div>
+				</div>
+				</div>
+						</div>
+					</div>
+		</div>
+								</div>
+					</div>
+		</section>
+						</div>
+						</div>
+					</div>
+		
+	</div><!-- .container -->
+
+	
+</div><!-- #footer-widgets -->
+
+        
+    </div><!-- #footer-inner -->
+
+    
+</footer><!-- #footer -->            
+        
+                        
+    </div><!-- #wrap -->
+
+    
+</div><!-- #outer-wrap -->
+
+
+
+<a id="scroll-top" class="scroll-top-right" href="#"><span class="fa fa-angle-up"></span></a>
+
+
+<div id="sidr-close">
+	<a href="#" class="toggle-sidr-close">
+		<i class="icon icon-close"></i><span class="close-text">Fechar Menu</span>
+	</a>
+</div>
+    
+    
+
+<!-- Google Tag Manager (noscript) -->
+<noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-M56VNR7"
+height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
+<!-- End Google Tag Manager (noscript) -->
+<div id="qlwapp" class="qlwapp-free qlwapp-button qlwapp-bottom-right qlwapp-all qlwapp-rounded">
+  
+</div>
+<link rel='stylesheet' id='elementor-post-5786-css'  href='https://offpragasdedetizacao.com.br/wp-content/uploads/elementor/css/post-5786.css?ver=1654180368' type='text/css' media='all' />
+<script type='text/javascript' id='eio-lazy-load-js-before'>
+var eio_lazy_vars = {"exactdn_domain":"","skip_autoscale":0,"threshold":0};
+</script>
+<script type='text/javascript' src='https://offpragasdedetizacao.com.br/wp-content/plugins/ewww-image-optimizer/includes/lazysizes.min.js?ver=652' id='eio-lazy-load-js'></script>
+<script type='text/javascript' src='https://offpragasdedetizacao.com.br/wp-includes/js/dist/vendor/wp-polyfill.min.js?ver=7.4.4' id='wp-polyfill-js'></script>
+<script type='text/javascript' id='wp-polyfill-js-after'>
+( 'fetch' in window ) || document.write( '<script src="https://offpragasdedetizacao.com.br/wp-includes/js/dist/vendor/wp-polyfill-fetch.min.js?ver=3.0.0"></scr' + 'ipt>' );( document.contains ) || document.write( '<script src="https://offpragasdedetizacao.com.br/wp-includes/js/dist/vendor/wp-polyfill-node-contains.min.js?ver=3.42.0"></scr' + 'ipt>' );( window.DOMRect ) || document.write( '<script src="https://offpragasdedetizacao.com.br/wp-includes/js/dist/vendor/wp-polyfill-dom-rect.min.js?ver=3.42.0"></scr' + 'ipt>' );( window.URL && window.URL.prototype && window.URLSearchParams ) || document.write( '<script src="https://offpragasdedetizacao.com.br/wp-includes/js/dist/vendor/wp-polyfill-url.min.js?ver=3.6.4"></scr' + 'ipt>' );( window.FormData && window.FormData.prototype.keys ) || document.write( '<script src="https://offpragasdedetizacao.com.br/wp-includes/js/dist/vendor/wp-polyfill-formdata.min.js?ver=3.0.12"></scr' + 'ipt>' );( Element.prototype.matches && Element.prototype.closest ) || document.write( '<script src="https://offpragasdedetizacao.com.br/wp-includes/js/dist/vendor/wp-polyfill-element-closest.min.js?ver=2.0.2"></scr' + 'ipt>' );( 'objectFit' in document.documentElement.style ) || document.write( '<script src="https://offpragasdedetizacao.com.br/wp-includes/js/dist/vendor/wp-polyfill-object-fit.min.js?ver=2.3.4"></scr' + 'ipt>' );
+</script>
+<script type='text/javascript' src='https://offpragasdedetizacao.com.br/wp-includes/js/dist/hooks.min.js?ver=d0188aa6c336f8bb426fe5318b7f5b72' id='wp-hooks-js'></script>
+<script type='text/javascript' src='https://offpragasdedetizacao.com.br/wp-includes/js/dist/i18n.min.js?ver=6ae7d829c963a7d8856558f3f9b32b43' id='wp-i18n-js'></script>
+<script type='text/javascript' id='wp-i18n-js-after'>
+wp.i18n.setLocaleData( { 'text direction\u0004ltr': [ 'ltr' ] } );
+</script>
+<script type='text/javascript' src='https://offpragasdedetizacao.com.br/wp-includes/js/dist/vendor/lodash.min.js?ver=4.17.21' id='lodash-js'></script>
+<script type='text/javascript' id='lodash-js-after'>
+window.lodash = _.noConflict();
+</script>
+<script type='text/javascript' src='https://offpragasdedetizacao.com.br/wp-includes/js/dist/url.min.js?ver=7c99a9585caad6f2f16c19ecd17a86cd' id='wp-url-js'></script>
+<script type='text/javascript' id='wp-api-fetch-js-translations'>
+( function( domain, translations ) {
+	var localeData = translations.locale_data[ domain ] || translations.locale_data.messages;
+	localeData[""].domain = domain;
+	wp.i18n.setLocaleData( localeData, domain );
+} )( "default", {"translation-revision-date":"2021-06-02 12:53:00+0000","generator":"GlotPress\/3.0.0-alpha.2","domain":"messages","locale_data":{"messages":{"":{"domain":"messages","plural-forms":"nplurals=2; plural=n > 1;","lang":"pt_BR"},"You are probably offline.":["Voc\u00ea provavelmente est\u00e1 offline."],"Media upload failed. If this is a photo or a large image, please scale it down and try again.":["Falha ao enviar a m\u00eddia. Se for uma foto ou imagem grande, reduza o tamanho e tente novamente."],"The response is not a valid JSON response.":["A resposta n\u00e3o \u00e9 um JSON v\u00e1lido."],"An unknown error occurred.":["Um erro desconhecido ocorreu."]}},"comment":{"reference":"wp-includes\/js\/dist\/api-fetch.js"}} );
+</script>
+<script type='text/javascript' src='https://offpragasdedetizacao.com.br/wp-includes/js/dist/api-fetch.min.js?ver=25cbf3644d200bdc5cab50e7966b5b03' id='wp-api-fetch-js'></script>
+<script type='text/javascript' id='wp-api-fetch-js-after'>
+wp.apiFetch.use( wp.apiFetch.createRootURLMiddleware( "https://offpragasdedetizacao.com.br/wp-json/" ) );
+wp.apiFetch.nonceMiddleware = wp.apiFetch.createNonceMiddleware( "f9f5d71ba3" );
+wp.apiFetch.use( wp.apiFetch.nonceMiddleware );
+wp.apiFetch.use( wp.apiFetch.mediaUploadMiddleware );
+wp.apiFetch.nonceEndpoint = "https://offpragasdedetizacao.com.br/wp-admin/admin-ajax.php?action=rest-nonce";
+</script>
+<script type='text/javascript' id='contact-form-7-js-extra'>
+/* <![CDATA[ */
+var wpcf7 = [];
+/* ]]> */
+</script>
+<script type='text/javascript' src='https://offpragasdedetizacao.com.br/wp-content/plugins/contact-form-7/includes/js/index.js?ver=5.4' id='contact-form-7-js'></script>
+<script type='text/javascript' src='https://maps.googleapis.com/maps/api/js?v=3.exp&#038;sensor=false&#038;key=AIzaSyCR3EHQhcAqKrza-fgTcfxKBVvihAjores' id='page-generator-pro-google-maps-js'></script>
+<script type='text/javascript' src='https://offpragasdedetizacao.com.br/wp-content/plugins/page-generator-pro/assets/js/min/frontend-min.js?ver=1.6.2' id='page-generator-pro-frontend-js'></script>
+<script type='text/javascript' src='https://offpragasdedetizacao.com.br/wp-includes/js/imagesloaded.min.js?ver=4.1.4' id='imagesloaded-js'></script>
+<script type='text/javascript' src='https://offpragasdedetizacao.com.br/wp-content/themes/oceanwp/assets/js/third/magnific-popup.min.js?ver=1.5.27' id='magnific-popup-js'></script>
+<script type='text/javascript' src='https://offpragasdedetizacao.com.br/wp-content/themes/oceanwp/assets/js/third/lightbox.min.js?ver=1.5.27' id='oceanwp-lightbox-js'></script>
+<script type='text/javascript' id='oceanwp-main-js-extra'>
+/* <![CDATA[ */
+var oceanwpLocalize = {"isRTL":"","menuSearchStyle":"disabled","sidrSource":"#sidr-close, #site-navigation","sidrDisplace":"1","sidrSide":"left","sidrDropdownTarget":"icon","verticalHeaderTarget":"icon","customSelects":".woocommerce-ordering .orderby, #dropdown_product_cat, .widget_categories select, .widget_archive select, .single-product .variations_form .variations select","ajax_url":"https:\/\/offpragasdedetizacao.com.br\/wp-admin\/admin-ajax.php"};
+/* ]]> */
+</script>
+<script type='text/javascript' src='https://offpragasdedetizacao.com.br/wp-content/themes/oceanwp/assets/js/main.min.js?ver=1.5.27' id='oceanwp-main-js'></script>
+<script type='text/javascript' src='https://offpragasdedetizacao.com.br/wp-content/plugins/wp-whatsapp-chat/assets/frontend/js/frontend.js?ver=fe2335ba59d5daa03ccd68bb805108e9' id='qlwapp-js'></script>
+<script type='text/javascript' src='https://offpragasdedetizacao.com.br/wp-includes/js/wp-embed.min.js?ver=5.7.6' id='wp-embed-js'></script>
+<!--[if lt IE 9]>
+<script type='text/javascript' src='https://offpragasdedetizacao.com.br/wp-content/themes/oceanwp/assets/js//third/html5.min.js?ver=1.5.27' id='html5shiv-js'></script>
+<![endif]-->
+<script type='text/javascript' src='https://offpragasdedetizacao.com.br/wp-content/plugins/elementor/assets/js/webpack.runtime.min.js?ver=3.1.4' id='elementor-webpack-runtime-js'></script>
+<script type='text/javascript' src='https://offpragasdedetizacao.com.br/wp-content/plugins/elementor/assets/js/frontend-modules.min.js?ver=3.1.4' id='elementor-frontend-modules-js'></script>
+<script type='text/javascript' src='https://offpragasdedetizacao.com.br/wp-includes/js/jquery/ui/core.min.js?ver=1.12.1' id='jquery-ui-core-js'></script>
+<script type='text/javascript' src='https://offpragasdedetizacao.com.br/wp-content/plugins/elementor/assets/lib/dialog/dialog.min.js?ver=4.8.1' id='elementor-dialog-js'></script>
+<script type='text/javascript' src='https://offpragasdedetizacao.com.br/wp-content/plugins/elementor/assets/lib/waypoints/waypoints.min.js?ver=4.0.2' id='elementor-waypoints-js'></script>
+<script type='text/javascript' src='https://offpragasdedetizacao.com.br/wp-content/plugins/elementor/assets/lib/share-link/share-link.min.js?ver=3.1.4' id='share-link-js'></script>
+<script type='text/javascript' src='https://offpragasdedetizacao.com.br/wp-content/plugins/elementor/assets/lib/swiper/swiper.min.js?ver=5.3.6' id='swiper-js'></script>
+<script type='text/javascript' id='elementor-frontend-js-before'>
+var elementorFrontendConfig = {"environmentMode":{"edit":false,"wpPreview":false,"isScriptDebug":false,"isImprovedAssetsLoading":false},"i18n":{"shareOnFacebook":"Compartilhar no Facebook","shareOnTwitter":"Compartilhar no Twitter","pinIt":"Fixar","download":"Baixar","downloadImage":"Baixar imagem","fullscreen":"Tela cheia","zoom":"Zoom","share":"Compartilhar","playVideo":"Reproduzir v\u00eddeo","previous":"Anterior","next":"Pr\u00f3ximo","close":"Fechar"},"is_rtl":false,"breakpoints":{"xs":0,"sm":480,"md":768,"lg":1025,"xl":1440,"xxl":1600},"version":"3.1.4","is_static":false,"experimentalFeatures":[],"urls":{"assets":"https:\/\/offpragasdedetizacao.com.br\/wp-content\/plugins\/elementor\/assets\/"},"settings":{"page":[],"editorPreferences":[]},"kit":{"global_image_lightbox":"yes","lightbox_enable_counter":"yes","lightbox_enable_fullscreen":"yes","lightbox_enable_zoom":"yes","lightbox_enable_share":"yes","lightbox_title_src":"title","lightbox_description_src":"description"},"post":{"id":9625,"title":"Dedetizadora%20SP%20%7C%20Empresa%20Dedetizadora%20e%20Descupinizadora","excerpt":"","featuredImage":"https:\/\/offpragasdedetizacao.com.br\/wp-content\/uploads\/2019\/02\/dedeizador-2.png"}};
+</script>
+<script type='text/javascript' src='https://offpragasdedetizacao.com.br/wp-content/plugins/elementor/assets/js/frontend.min.js?ver=3.1.4' id='elementor-frontend-js'></script>
+<script type='text/javascript' src='https://offpragasdedetizacao.com.br/wp-content/plugins/elementor/assets/js/preloaded-elements-handlers.min.js?ver=3.1.4' id='preloaded-elements-handlers-js'></script>
+<script type='text/javascript' src='https://offpragasdedetizacao.com.br/wp-includes/js/underscore.min.js?ver=1.8.3' id='underscore-js'></script>
+<script type='text/javascript' id='wp-util-js-extra'>
+/* <![CDATA[ */
+var _wpUtilSettings = {"ajax":{"url":"\/wp-admin\/admin-ajax.php"}};
+/* ]]> */
+</script>
+<script type='text/javascript' src='https://offpragasdedetizacao.com.br/wp-includes/js/wp-util.min.js?ver=5.7.6' id='wp-util-js'></script>
+<script type='text/javascript' id='wpforms-elementor-js-extra'>
+/* <![CDATA[ */
+var wpformsElementorVars = {"captcha_provider":"recaptcha","recaptcha_type":"v2"};
+/* ]]> */
+</script>
+<script type='text/javascript' src='https://offpragasdedetizacao.com.br/wp-content/plugins/wpforms-lite/assets/js/integrations/elementor/frontend.min.js?ver=1.6.4.1' id='wpforms-elementor-js'></script>
+    <script src="//code.jivosite.com/widget/JDeccIARjB" async></script>
+
+
+</body>
+</html>
